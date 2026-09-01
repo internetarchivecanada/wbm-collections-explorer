@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Not found — Wayback Collection Search</title>
+<meta name="description" content="A tile-based explorer for every collection in the Wayback Machine's Collection Search.">
+<link rel="stylesheet" href="/wbm-collections-explorer/static/app.css?v=1.1.0">
+<script>
+  // set the theme before first paint so there is no flash
+  try {
+    var t = localStorage.getItem('wce-theme');
+    if (t) document.documentElement.setAttribute('data-theme', t);
+  } catch (e) {}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<main id="main"><div class="wrap" style="padding:64px 0">
+  <h1>No such collection</h1>
+  <p class="lede">That collection id isn't in the Wayback Machine's Collection Search drop-down.</p>
+  <p><a href="/wbm-collections-explorer/">← See all collections</a></p>
+</div></main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p>
+      Data harvested from the public Wayback Machine endpoints
+      <code>/__wb/search/collectioninfo</code> and <code>/__wb/search/waybacksearch</code>,
+      plus <code>archive.org/metadata</code>. Snapshot taken
+      <time datetime="2026-08-31T17:13:01+00:00">2026-08-31 17:13 UTC</time>.
+    </p>
+    <p>
+      Every collection here is searchable at
+      <a href="https://web.archive.org/collection-search/">web.archive.org/collection-search/</a>.
+      Explorer v1.1.0 · <a href="/wbm-collections-explorer/api/collections.json">JSON API</a>
+    </p>
+  </div>
+</footer>
+<script src="/wbm-collections-explorer/static/app.js?v=1.1.0"></script>
+</body>
+</html>

@@ -1,0 +1,4674 @@
+{
+ "generated": "2026-08-31T17:13:01+00:00",
+ "source": "https://web.archive.org/collection-search/",
+ "collections": [
+  {
+   "id": "telegram",
+   "title": "Telegram Public Channels",
+   "blurb": "Archive Team's harvest of public Telegram channels and posts, by far the largest collection on this shelf.",
+   "category": "platform",
+   "kind": "web pages",
+   "count": 3787236399,
+   "share": 0.465024963146604,
+   "indexes": [
+    "object",
+    "text"
+   ],
+   "index_updated": "2025-06-19",
+   "index_age_days": 438,
+   "api_title": "Telegram",
+   "api_description": "Search #count Telegram web pages using an index built from anchor text,\r\nall URL parts (file names, hosts, domains), MIME Types, HTTP Status\r\ncodes and the full text of the web pages.",
+   "search_url": "https://web.archive.org/collection-search/telegram",
+   "item_url": "https://archive.org/details/archiveteam_telegram",
+   "item": {
+    "id": "archiveteam_telegram",
+    "title": "Archive Team: Telegram",
+    "curator": "arkiver",
+    "public_date": "2022-04-01",
+    "subject": ""
+   },
+   "years": {},
+   "year_min": null,
+   "year_max": null,
+   "years_capped": false,
+   "top_domains": [],
+   "domain_count_capped": false,
+   "top_languages": [],
+   "language_count_capped": false,
+   "tlds": [],
+   "dead_known": false,
+   "dead_share": null,
+   "dead_sampled": 0,
+   "seed_known": false,
+   "seed_count": null,
+   "has_profile": false
+  },
+  {
+   "id": "pdf",
+   "title": "PDFs \u2014 Web-Wide",
+   "blurb": "Every PDF the Wayback Machine has indexed, searchable by the document's own text as well as its URL and anchor text.",
+   "category": "format",
+   "kind": "PDF files",
+   "count": 1729093664,
+   "share": 0.21231093934113474,
+   "indexes": [
+    "object",
+    "text"
+   ],
+   "index_updated": "2026-06-17",
+   "index_age_days": 75,
+   "api_title": "PDFs",
+   "api_description": "Search #count PDF files using an index built from anchor text, all URL\r\nparts (file names, hosts, domains), MIME Types, language, HTTP Status codes,\r\nWeb Page Titles and all the text from the first two pages of PDF documents.",
+   "search_url": "https://web.archive.org/collection-search/pdf",
+   "item_url": "",
+   "item": null,
+   "years": {},
+   "year_min": null,
+   "year_max": null,
+   "years_capped": false,
+   "top_domains": [],
+   "domain_count_capped": false,
+   "top_languages": [],
+   "language_count_capped": false,
+   "tlds": [],
+   "dead_known": false,
+   "dead_share": null,
+   "dead_sampled": 0,
+   "seed_known": false,
+   "seed_count": null,
+   "has_profile": false
+  },
+  {
+   "id": "EndOfTerm2024WebCrawls",
+   "title": "End of Term 2024",
+   "blurb": "The federal web captured at the Biden-to-Trump transition, and the biggest End of Term crawl to date.",
+   "category": "gov",
+   "kind": "web pages",
+   "count": 743298225,
+   "share": 0.0912676667817274,
+   "indexes": [
+    "text"
+   ],
+   "index_updated": "2026-08-22",
+   "index_age_days": 9,
+   "api_title": "End Of Term (US Gov) 2024",
+   "api_description": "Search #count web pages using an index built from anchor text, all URL parts (file names, hosts, domains), MIME Types, language, HTTP Status codes and the full text of the web pages.",
+   "search_url": "https://web.archive.org/collection-search/EndOfTerm2024WebCrawls",
+   "item_url": "https://archive.org/details/EndOfTerm2024WebCrawls",
+   "item": {
+    "id": "EndOfTerm2024WebCrawls",
+    "title": "End Of Term 2024 Web Crawls",
+    "curator": "sawood",
+    "public_date": "2024-09-19",
+    "subject": ""
+   },
+   "years": {
+    "2024": 141439188,
+    "2025": 601631998
+   },
+   "year_min": "2024",
+   "year_max": "2025",
+   "years_capped": false,
+   "top_domains": [
+    [
+     "nih.gov",
+     84456472
+    ],
+    [
+     "noaa.gov",
+     43072344
+    ],
+    [
+     "ed.gov",
+     42344862
+    ],
+    [
+     "usda.gov",
+     37978382
+    ],
+    [
+     "nasa.gov",
+     36246019
+    ],
+    [
+     "ecfr.gov",
+     34995479
+    ]
+   ],
+   "domain_count_capped": true,
+   "top_languages": [
+    [
+     "en",
+     645111700
+    ],
+    [
+     "es",
+     5356059
+    ],
+    [
+     "qu",
+     4550766
+    ],
+    [
+     "si",
+     2714494
+    ],
+    [
+     "la",
+     2627944
+    ],
+    [
+     "fr",
+     2277024
+    ]
+   ],
+   "language_count_capped": true,
+   "tlds": [
+    [
+     "gov",
+     679288467
+    ],
+    [
+     "com",
+     24876681
+    ],
+    [
+     "mil",
+     19428430
+    ],
+    [
+     "net",
+     7095371
+    ],
+    [
+     "org",
+     5824671
+    ],
+    [
+     "edu",
+     5379204
+    ]
+   ],
+   "dead_known": true,
+   "dead_share": 0.37857582918195953,
+   "dead_sampled": 391958600,
+   "seed_known": false,
+   "seed_count": null,
+   "has_profile": true
+  },
+  {
+   "id": "mediacloud",
+   "title": "Media Cloud News Corpus",
+   "blurb": "A continuously-crawled corpus of global online news, built with the Media Cloud research platform for studying how stories spread.",
+   "category": "news",
+   "kind": "articles",
+   "count": 684415073,
+   "share": 0.08403755682714785,
+   "indexes": [
+    "object",
+    "text"
+   ],
+   "index_updated": "2026-08-28",
+   "index_age_days": 3,
+   "api_title": "Media Cloud",
+   "api_description": "Search #count news articles using an index built from anchor text,\r\nall URL parts (file names, hosts, domains), MIME Types, language,\r\nHTTP Status codes and the full text of the articles.",
+   "search_url": "https://web.archive.org/collection-search/mediacloud",
+   "item_url": "",
+   "item": null,
+   "years": {
+    "2022": 156100753,
+    "2023": 166319435,
+    "2024": 110272013,
+    "2025": 148670911,
+    "2026": 103051961
+   },
+   "year_min": "2022",
+   "year_max": "2026",
+   "years_capped": false,
+   "top_domains": [
+    [
+     "ttblogs.com",
+     13640674
+    ],
+    [
+     "blogdomago.com",
+     11670986
+    ],
+    [
+     "yahoo.com",
+     10961192
+    ],
+    [
+     "indiatimes.com",
+     4341246
+    ],
+    [
+     "amarujala.com",
+     4227534
+    ],
+    [
+     "goo.ne.jp",
+     3991584
+    ]
+   ],
+   "domain_count_capped": true,
+   "top_languages": [
+    [
+     "en",
+     220119407
+    ],
+    [
+     "es",
+     77606786
+    ],
+    [
+     "de",
+     31718588
+    ],
+    [
+     "ru",
+     30954441
+    ],
+    [
+     "pt",
+     28725388
+    ],
+    [
+     "ar",
+     23836476
+    ]
+   ],
+   "language_count_capped": true,
+   "tlds": [
+    [
+     "com",
+     324834209
+    ],
+    [
+     "de",
+     27176450
+    ],
+    [
+     "com.br",
+     19096523
+    ],
+    [
+     "it",
+     18486131
+    ],
+    [
+     "net",
+     17067065
+    ],
+    [
+     "ru",
+     16771563
+    ]
+   ],
+   "dead_known": true,
+   "dead_share": 0.17640374820430796,
+   "dead_sampled": 274610004,
+   "seed_known": false,
+   "seed_count": null,
+   "has_profile": true
+  },
+  {
+   "id": "gov",
+   "title": ".gov Web Pages",
+   "blurb": "Full-text index of pages captured from United States government domains \u2014 the broadest single view of the .gov web the Wayback Machine offers.",
+   "category": "gov",
+   "kind": "web pages",
+   "count": 428486225,
+   "share": 0.05261271544656288,
+   "indexes": [
+    "text"
+   ],
+   "index_updated": "2024-11-26",
+   "index_age_days": 643,
+   "api_title": ".gov web pages",
+   "api_description": "Search #count .gov web pages using an index built from anchor text, all\r\nURL parts (file names, hosts, domains), MIME Types, HTTP Status codes\r\nand the full text of the web pages.",
+   "search_url": "https://web.archive.org/collection-search/gov",
+   "item_url": "",
+   "item": null,
+   "years": {
+    "2004": 4352673,
+    "2006": 12692939,
+    "2008": 11664548,
+    "2009": 21221429,
+    "2010": 16227739,
+    "2011": 14839621,
+    "2012": 11763493,
+    "2013": 8624038,
+    "2014": 7046655,
+    "2015": 15164946,
+    "2016": 17860715,
+    "2017": 40723825,
+    "2018": 11369263,
+    "2019": 14899898,
+    "2020": 96373061,
+    "2021": 72607532,
+    "2022": 40119768
+   },
+   "year_min": "2004",
+   "year_max": "2022",
+   "years_capped": true,
+   "top_domains": [
+    [
+     "house.gov",
+     93281790
+    ],
+    [
+     "usda.gov",
+     18366436
+    ],
+    [
+     "ca.gov",
+     17020939
+    ],
+    [
+     "climate.gov",
+     9387296
+    ],
+    [
+     "ahrq.gov",
+     9041662
+    ],
+    [
+     "nasa.gov",
+     8922551
+    ]
+   ],
+   "domain_count_capped": true,
+   "top_languages": [
+    [
+     "en",
+     415670614
+    ],
+    [
+     "es",
+     3196853
+    ],
+    [
+     "mt",
+     1028056
+    ],
+    [
+     "la",
+     883783
+    ],
+    [
+     "fr",
+     774275
+    ],
+    [
+     "et",
+     761122
+    ]
+   ],
+   "language_count_capped": true,
+   "tlds": [
+    [
+     "gov",
+     428486223
+    ],
+    [
+     "GOV",
+     1
+    ],
+    [
+     "Gov",
+     1
+    ]
+   ],
+   "dead_known": false,
+   "dead_share": null,
+   "dead_sampled": 0,
+   "seed_known": false,
+   "seed_count": null,
+   "has_profile": true
+  },
+  {
+   "id": "EndOfTerm2020WebCrawls",
+   "title": "End of Term 2020",
+   "blurb": "The federal web captured at the Trump-to-Biden transition \u2014 the largest End of Term crawl until 2024.",
+   "category": "gov",
+   "kind": "web pages",
+   "count": 306449773,
+   "share": 0.0376281751076427,
+   "indexes": [
+    "text"
+   ],
+   "index_updated": "2022-07-01",
+   "index_age_days": 1522,
+   "api_title": "End Of Term (US Gov) 2020",
+   "api_description": "Search #count web pages using an index built from anchor text,\r\nall URL parts (file names, hosts, domains), MIME Types, language,\r\nHTTP Status codes and the full text of the web pages.",
+   "search_url": "https://web.archive.org/collection-search/EndOfTerm2020WebCrawls",
+   "item_url": "https://archive.org/details/EndOfTerm2020WebCrawls",
+   "item": {
+    "id": "EndOfTerm2020WebCrawls",
+    "title": "End Of Term 2020 Web Crawls",
+    "curator": "mark",
+    "public_date": "2020-09-28",
+    "subject": ""
+   },
+   "years": {
+    "2004": 11481,
+    "2007": 8066,
+    "2008": 8989,
+    "2009": 56709,
+    "2010": 28351,
+    "2011": 151084,
+    "2012": 51016,
+    "2013": 35076,
+    "2014": 25866,
+    "2015": 111490,
+    "2016": 305730,
+    "2017": 1803012,
+    "2018": 55281,
+    "2019": 57492,
+    "2020": 124601510,
+    "2021": 179106118,
+    "2022": 15003
+   },
+   "year_min": "2004",
+   "year_max": "2022",
+   "years_capped": true,
+   "top_domains": [
+    [
+     "usda.gov",
+     23902491
+    ],
+    [
+     "nih.gov",
+     22661919
+    ],
+    [
+     "nasa.gov",
+     10483363
+    ],
+    [
+     "commerce.gov",
+     10273159
+    ],
+    [
+     "pnnl.gov",
+     8067267
+    ],
+    [
+     "noaa.gov",
+     6708979
+    ]
+   ],
+   "domain_count_capped": true,
+   "top_languages": [
+    [
+     "en",
+     293538939
+    ],
+    [
+     "es",
+     2211574
+    ],
+    [
+     "la",
+     956177
+    ],
+    [
+     "mt",
+     869902
+    ],
+    [
+     "fi",
+     766839
+    ],
+    [
+     "fr",
+     683980
+    ]
+   ],
+   "language_count_capped": true,
+   "tlds": [
+    [
+     "gov",
+     232366161
+    ],
+    [
+     "org",
+     35337241
+    ],
+    [
+     "com",
+     28751944
+    ],
+    [
+     "edu",
+     4639832
+    ],
+    [
+     "mil",
+     2010620
+    ],
+    [
+     "net",
+     1641022
+    ]
+   ],
+   "dead_known": true,
+   "dead_share": 0.5235683055216128,
+   "dead_sampled": 306449757,
+   "seed_known": false,
+   "seed_count": null,
+   "has_profile": true
+  },
+  {
+   "id": "gov-pdf",
+   "title": ".gov PDF Documents",
+   "blurb": "PDFs published on U.S. government domains, searchable by the text inside them rather than only by filename.",
+   "category": "gov",
+   "kind": "PDF files",
+   "count": 121213465,
+   "share": 0.014883487893541757,
+   "indexes": [
+    "object",
+    "text"
+   ],
+   "index_updated": "2026-05-06",
+   "index_age_days": 117,
+   "api_title": ".gov PDFs",
+   "api_description": "Search #count .gov PDF files using an index built from anchor text, all\r\nURL parts (file names, hosts, domains), MIME Types, HTTP Status codes,\r\nWeb Page Titles and all the text from the first two pages of PDF documents.",
+   "search_url": "https://web.archive.org/collection-search/gov-pdf",
+   "item_url": "",
+   "item": null,
+   "years": {
+    "2004": 2794979,
+    "2006": 3911367,
+    "2008": 3108258,
+    "2009": 3659635,
+    "2010": 4110352,
+    "2011": 2165349,
+    "2012": 1479792,
+    "2015": 4798484,
+    "2016": 7287021,
+    "2017": 25577388,
+    "2019": 2003467,
+    "2020": 5560478,
+    "2021": 5837121,
+    "2022": 5600778,
+    "2023": 9013393,
+    "2024": 7576710,
+    "2025": 19416596
+   },
+   "year_min": "2004",
+   "year_max": "2025",
+   "years_capped": true,
+   "top_domains": [
+    [
+     "nih.gov",
+     8752608
+    ],
+    [
+     "ca.gov",
+     6751948
+    ],
+    [
+     "nrc.gov",
+     4579952
+    ],
+    [
+     "gpo.gov",
+     3955274
+    ],
+    [
+     "iowa.gov",
+     3253619
+    ],
+    [
+     "ny.gov",
+     3190315
+    ]
+   ],
+   "domain_count_capped": true,
+   "top_languages": [
+    [
+     "en",
+     51141150
+    ],
+    [
+     "zh",
+     430600
+    ],
+    [
+     "la",
+     305955
+    ],
+    [
+     "es",
+     290454
+    ],
+    [
+     "lo",
+     106973
+    ],
+    [
+     "km",
+     91734
+    ]
+   ],
+   "language_count_capped": false,
+   "tlds": [
+    [
+     "gov",
+     120849565
+    ],
+    [
+     "mil",
+     363900
+    ]
+   ],
+   "dead_known": true,
+   "dead_share": 0.5428684815786385,
+   "dead_sampled": 121205401,
+   "seed_known": false,
+   "seed_count": null,
+   "has_profile": true
+  },
+  {
+   "id": "russian-independent-media",
+   "title": "Russian Independent Media",
+   "blurb": "Reporting from Russian outlets blocked, branded \"undesirable\" or driven into exile, archived with PEN America's Russian Independent Media Archive.",
+   "category": "press",
+   "kind": "articles",
+   "count": 65954368,
+   "share": 0.008098366280133959,
+   "indexes": [
+    "object",
+    "text"
+   ],
+   "index_updated": "2026-08-30",
+   "index_age_days": 1,
+   "api_title": "Russian Independent Media Archive",
+   "api_description": "Search #count Russian independent media news articles using an index built from anchor text, all URL parts (file names, hosts, domains), MIME Types, HTTP Status codes and the full text of the articles.\r\n<br><br>\r\nThis Collection was created in collaboration with the <a href=\"https://rima.media/en\">Russian Independent Media Archive</a>, a project of <a href=\"https://pen.org/\">PEN America</a> and <a href=\"https://www.bard.edu/\">BARD College</a>.",
+   "search_url": "https://web.archive.org/collection-search/russian-independent-media",
+   "item_url": "",
+   "item": null,
+   "years": {
+    "2022": 23447960,
+    "2023": 10266538,
+    "2024": 19288168,
+    "2025": 11049350,
+    "2026": 1902352
+   },
+   "year_min": "2022",
+   "year_max": "2026",
+   "years_capped": false,
+   "top_domains": [
+    [
+     "t.me",
+     18988348
+    ],
+    [
+     "severpost.ru",
+     3345968
+    ],
+    [
+     "newsru.com",
+     2792091
+    ],
+    [
+     "ura.news",
+     2563322
+    ],
+    [
+     "krymr.com",
+     2247599
+    ],
+    [
+     "fontanka.ru",
+     1796639
+    ]
+   ],
+   "domain_count_capped": true,
+   "top_languages": [
+    [
+     "ru",
+     51664804
+    ],
+    [
+     "en",
+     8501433
+    ],
+    [
+     "fr",
+     660305
+    ],
+    [
+     "qu",
+     457809
+    ],
+    [
+     "de",
+     447365
+    ],
+    [
+     "uk",
+     391989
+    ]
+   ],
+   "language_count_capped": true,
+   "tlds": [
+    [
+     "me",
+     19179395
+    ],
+    [
+     "ru",
+     18057376
+    ],
+    [
+     "com",
+     14652180
+    ],
+    [
+     "org",
+     3940606
+    ],
+    [
+     "news",
+     2642549
+    ],
+    [
+     "lv",
+     1256486
+    ]
+   ],
+   "dead_known": true,
+   "dead_share": 0.35978882649093186,
+   "dead_sampled": 62818296,
+   "seed_known": true,
+   "seed_count": 8120454,
+   "has_profile": true
+  },
+  {
+   "id": "EndOfTerm2016WebCrawls",
+   "title": "End of Term 2016",
+   "blurb": "The federal web captured at the Obama-to-Trump transition, the crawl that drew wide attention to disappearing government data.",
+   "category": "gov",
+   "kind": "web pages",
+   "count": 57169185,
+   "share": 0.007019656379191446,
+   "indexes": [
+    "text"
+   ],
+   "index_updated": "2023-02-01",
+   "index_age_days": 1307,
+   "api_title": "End Of Term (US Gov) 2016",
+   "api_description": "Search #count web pages using an index built from anchor text,\r\nall URL parts (file names, hosts, domains), MIME Types, language,\r\nHTTP Status codes and the full text of the web pages.",
+   "search_url": "https://web.archive.org/collection-search/EndOfTerm2016WebCrawls",
+   "item_url": "https://archive.org/details/EndOfTerm2016WebCrawls",
+   "item": {
+    "id": "EndOfTerm2016WebCrawls",
+    "title": "End of Term 2016 Web Crawls",
+    "curator": "jefferson",
+    "public_date": "2016-11-21",
+    "subject": "end of term; federal government; 2016; president; congress; government data"
+   },
+   "years": {
+    "2016": 25419156,
+    "2017": 31750029
+   },
+   "year_min": "2016",
+   "year_max": "2017",
+   "years_capped": false,
+   "top_domains": [
+    [
+     "wikipedia.org",
+     3840214
+    ],
+    [
+     "faa.gov",
+     3484448
+    ],
+    [
+     "noaa.gov",
+     2097582
+    ],
+    [
+     "dot.gov",
+     1742268
+    ],
+    [
+     "uscourts.gov",
+     1649555
+    ],
+    [
+     "army.mil",
+     1568610
+    ]
+   ],
+   "domain_count_capped": true,
+   "top_languages": [
+    [
+     "en",
+     49884313
+    ],
+    [
+     "es",
+     831251
+    ],
+    [
+     "fr",
+     763422
+    ],
+    [
+     "de",
+     708477
+    ],
+    [
+     "it",
+     661630
+    ],
+    [
+     "eo",
+     479551
+    ]
+   ],
+   "language_count_capped": true,
+   "tlds": [
+    [
+     "gov",
+     36487264
+    ],
+    [
+     "org",
+     8662457
+    ],
+    [
+     "mil",
+     5603709
+    ],
+    [
+     "com",
+     4453681
+    ],
+    [
+     "net",
+     422986
+    ],
+    [
+     "us",
+     293131
+    ]
+   ],
+   "dead_known": true,
+   "dead_share": 0.6116343811923015,
+   "dead_sampled": 56793807,
+   "seed_known": false,
+   "seed_count": null,
+   "has_profile": true
+  },
+  {
+   "id": "local-news-us",
+   "title": "U.S. Local News",
+   "blurb": "Daily crawls of a seed list of local news outlets across the United States, capturing coverage in places losing their newspapers.",
+   "category": "news",
+   "kind": "web pages",
+   "count": 44144717,
+   "share": 0.005420415636442098,
+   "indexes": [
+    "text"
+   ],
+   "index_updated": "2026-08-29",
+   "index_age_days": 2,
+   "api_title": "local U.S. news",
+   "api_description": "Search #count local U.S. news web pages using an index built from anchor text,\nall URL parts (file names, hosts, domains), MIME Types, HTTP Status\ncodes and the full text of the pages",
+   "search_url": "https://web.archive.org/collection-search/local-news-us",
+   "item_url": "https://archive.org/details/local-news-us",
+   "item": {
+    "id": "local-news-us",
+    "title": "Local News - U.S.",
+    "curator": "willmhowes",
+    "public_date": "2024-03-29",
+    "subject": ""
+   },
+   "years": {
+    "2024": 7234747,
+    "2025": 34339023,
+    "2026": 2570947
+   },
+   "year_min": "2024",
+   "year_max": "2026",
+   "years_capped": false,
+   "top_domains": [
+    [
+     "hdnux.com",
+     2819996
+    ],
+    [
+     "medium.com",
+     2038673
+    ],
+    [
+     "chicagotribune.com",
+     1071314
+    ],
+    [
+     "corriere.it",
+     1003484
+    ],
+    [
+     "wikipedia.org",
+     996318
+    ],
+    [
+     "eastbaytimes.com",
+     916055
+    ]
+   ],
+   "domain_count_capped": true,
+   "top_languages": [
+    [
+     "en",
+     31198573
+    ],
+    [
+     "qu",
+     2855484
+    ],
+    [
+     "es",
+     2507444
+    ],
+    [
+     "it",
+     994045
+    ],
+    [
+     "zh",
+     938222
+    ],
+    [
+     "pt",
+     281619
+    ]
+   ],
+   "language_count_capped": true,
+   "tlds": [
+    [
+     "com",
+     35986052
+    ],
+    [
+     "org",
+     3451076
+    ],
+    [
+     "it",
+     1035940
+    ],
+    [
+     "com.cn",
+     761795
+    ],
+    [
+     "net",
+     586638
+    ],
+    [
+     "edu",
+     429682
+    ]
+   ],
+   "dead_known": true,
+   "dead_share": 0.26509280794013435,
+   "dead_sampled": 40616945,
+   "seed_known": false,
+   "seed_count": null,
+   "has_profile": true
+  },
+  {
+   "id": "geocities",
+   "title": "GeoCities",
+   "blurb": "The 1990s personal-homepage community, crawled in a rush as Yahoo shut it down in 2009 \u2014 the classic save-it-before-it-goes collection.",
+   "category": "platform",
+   "kind": "web pages",
+   "count": 30788481,
+   "share": 0.0037804379589680107,
+   "indexes": [
+    "text"
+   ],
+   "index_updated": "2026-03-13",
+   "index_age_days": 171,
+   "api_title": "geocities",
+   "api_description": "Search #count GeoCities web pages using an index built from anchor text,\nall URL parts (file names, hosts, domains), MIME Types, HTTP Status\ncodes and the full text of the pages",
+   "search_url": "https://web.archive.org/collection-search/geocities",
+   "item_url": "https://archive.org/details/geocities",
+   "item": {
+    "id": "geocities",
+    "title": "Geocities Closing Crawl",
+    "curator": "alexis",
+    "public_date": "2012-04-04",
+    "subject": ""
+   },
+   "years": {
+    "2009": 30788481
+   },
+   "year_min": "2009",
+   "year_max": "2009",
+   "years_capped": false,
+   "top_domains": [
+    [
+     "geocities.com",
+     27555201
+    ],
+    [
+     "yahoo.com",
+     651011
+    ],
+    [
+     "myspace.com",
+     44860
+    ],
+    [
+     "amazon.com",
+     38192
+    ],
+    [
+     "youtube.com",
+     36076
+    ],
+    [
+     "physforum.com",
+     33846
+    ]
+   ],
+   "domain_count_capped": true,
+   "top_languages": [
+    [
+     "en",
+     14564279
+    ],
+    [
+     "es",
+     1454479
+    ],
+    [
+     "zh",
+     778494
+    ],
+    [
+     "pt",
+     655374
+    ],
+    [
+     "de",
+     560405
+    ],
+    [
+     "it",
+     331393
+    ]
+   ],
+   "language_count_capped": true,
+   "tlds": [
+    [
+     "com",
+     29648096
+    ],
+    [
+     "net",
+     230447
+    ],
+    [
+     "org",
+     215285
+    ],
+    [
+     "com.br",
+     78366
+    ],
+    [
+     "de",
+     70935
+    ],
+    [
+     "ca",
+     53838
+    ]
+   ],
+   "dead_known": false,
+   "dead_share": null,
+   "dead_sampled": 0,
+   "seed_known": false,
+   "seed_count": null,
+   "has_profile": true
+  },
+  {
+   "id": "presentations",
+   "title": "Presentation Decks",
+   "blurb": "PowerPoint, Keynote and OpenOffice Impress files captured from the web and indexed by their slide text.",
+   "category": "format",
+   "kind": "files",
+   "count": 21898090,
+   "share": 0.002688809839787088,
+   "indexes": [
+    "object",
+    "text"
+   ],
+   "index_updated": "2022-02-20",
+   "index_age_days": 1653,
+   "api_title": "Presentations",
+   "api_description": "Search #count Presentations (MS Powerpoint, Apple Keynote, OpenOffice Impress)\r\nusing an index built with the full text, anchor text, all URL\r\nparts (file names, hosts, domains), MIME Types, language and HTTP status codes.",
+   "search_url": "https://web.archive.org/collection-search/presentations",
+   "item_url": "",
+   "item": null,
+   "years": {
+    "2003": 845494,
+    "2004": 1079088,
+    "2005": 565017,
+    "2006": 1017458,
+    "2007": 448656,
+    "2009": 376595,
+    "2010": 756028,
+    "2015": 385802,
+    "2016": 562488,
+    "2017": 664272,
+    "2018": 1701721,
+    "2019": 494918,
+    "2020": 6178010,
+    "2021": 1118620,
+    "2022": 1414241,
+    "2023": 1609808,
+    "2024": 754987
+   },
+   "year_min": "2003",
+   "year_max": "2024",
+   "years_capped": true,
+   "top_domains": [
+    [
+     "googlegroups.com",
+     6082093
+    ],
+    [
+     "wikispaces.com",
+     1429780
+    ],
+    [
+     "googleusercontent.com",
+     502347
+    ],
+    [
+     "issuu.com",
+     306512
+    ],
+    [
+     "cambridgeclarion.com",
+     262129
+    ],
+    [
+     "bmj.com",
+     212267
+    ]
+   ],
+   "domain_count_capped": false,
+   "top_languages": [
+    [
+     "en",
+     12976836
+    ],
+    [
+     "es",
+     2121406
+    ],
+    [
+     "zh",
+     1699511
+    ],
+    [
+     "pt",
+     658787
+    ],
+    [
+     "ru",
+     510507
+    ],
+    [
+     "fr",
+     483611
+    ]
+   ],
+   "language_count_capped": true,
+   "tlds": [
+    [
+     "com",
+     12136266
+    ],
+    [
+     "edu",
+     2448338
+    ],
+    [
+     "gov",
+     888317
+    ],
+    [
+     "cn",
+     344474
+    ],
+    [
+     "xyz",
+     260565
+    ],
+    [
+     "ru",
+     249079
+    ]
+   ],
+   "dead_known": true,
+   "dead_share": 0.8428786514680312,
+   "dead_sampled": 21896878,
+   "seed_known": false,
+   "seed_count": null,
+   "has_profile": true
+  },
+  {
+   "id": "EndOfTerm2012WebCrawls",
+   "title": "End of Term 2012",
+   "blurb": "The federal executive, legislative and judicial web captured at the close of President Obama's first term.",
+   "category": "gov",
+   "kind": "web pages",
+   "count": 16373743,
+   "share": 0.0020104895583379625,
+   "indexes": [
+    "text"
+   ],
+   "index_updated": "2023-02-01",
+   "index_age_days": 1307,
+   "api_title": "End Of Term (US Gov) 2012",
+   "api_description": "Search #count web pages using an index built from anchor text,\r\nall URL parts (file names, hosts, domains), MIME Types, language,\r\nHTTP Status codes and the full text of the web pages.",
+   "search_url": "https://web.archive.org/collection-search/EndOfTerm2012WebCrawls",
+   "item_url": "https://archive.org/details/EndOfTerm2012WebCrawls",
+   "item": {
+    "id": "EndOfTerm2012WebCrawls",
+    "title": "End of Term 2012 Web Crawls",
+    "curator": "kcarpenter",
+    "public_date": "2012-09-13",
+    "subject": "end of term; US; Federal government; 2012; Obama"
+   },
+   "years": {
+    "2012": 6220783,
+    "2013": 7177952,
+    "2017": 2975008
+   },
+   "year_min": "2012",
+   "year_max": "2017",
+   "years_capped": false,
+   "top_domains": [
+    [
+     "house.gov",
+     829254
+    ],
+    [
+     "nasa.gov",
+     689960
+    ],
+    [
+     "dot.gov",
+     599276
+    ],
+    [
+     "senate.gov",
+     548246
+    ],
+    [
+     "usda.gov",
+     468963
+    ],
+    [
+     "usgs.gov",
+     443700
+    ]
+   ],
+   "domain_count_capped": true,
+   "top_languages": [
+    [
+     "en",
+     15341156
+    ],
+    [
+     "es",
+     182003
+    ],
+    [
+     "la",
+     124688
+    ],
+    [
+     "ko",
+     81040
+    ],
+    [
+     "it",
+     74579
+    ],
+    [
+     "fr",
+     68663
+    ]
+   ],
+   "language_count_capped": true,
+   "tlds": [
+    [
+     "gov",
+     13695226
+    ],
+    [
+     "mil",
+     1395942
+    ],
+    [
+     "com",
+     690825
+    ],
+    [
+     "org",
+     346336
+    ],
+    [
+     "edu",
+     119117
+    ],
+    [
+     "net",
+     44774
+    ]
+   ],
+   "dead_known": true,
+   "dead_share": 0.6964243656943593,
+   "dead_sampled": 16329746,
+   "seed_known": false,
+   "seed_count": null,
+   "has_profile": true
+  },
+  {
+   "id": "eric.ed.gov",
+   "title": "ERIC \u2014 Education Research",
+   "blurb": "The U.S. Department of Education's Education Resources Information Center, the main bibliographic database for education research.",
+   "category": "gov",
+   "kind": "web pages",
+   "count": 11377291,
+   "share": 0.00139698813873361,
+   "indexes": [
+    "text"
+   ],
+   "index_updated": "2025-04-05",
+   "index_age_days": 513,
+   "api_title": "eric.ed.gov",
+   "api_description": "Search #count https://eric.ed.gov/ captures using an index built from anchor text,\nall URL parts (file names, hosts, domains), MIME Types, HTTP Status\ncodes and the full text.",
+   "search_url": "https://web.archive.org/collection-search/eric.ed.gov",
+   "item_url": "",
+   "item": null,
+   "years": {
+    "2001": 155,
+    "2007": 31,
+    "2010": 1070,
+    "2011": 2562,
+    "2012": 28802,
+    "2013": 89985,
+    "2015": 1164997,
+    "2016": 898,
+    "2017": 101,
+    "2018": 21123,
+    "2019": 2546,
+    "2020": 2183100,
+    "2021": 2313579,
+    "2022": 47650,
+    "2023": 18833,
+    "2024": 212230,
+    "2025": 5289591
+   },
+   "year_min": "2001",
+   "year_max": "2025",
+   "years_capped": true,
+   "top_domains": [
+    [
+     "ed.gov",
+     11377291
+    ]
+   ],
+   "domain_count_capped": false,
+   "top_languages": [
+    [
+     "en",
+     11376761
+    ],
+    [
+     "la",
+     361
+    ],
+    [
+     "no",
+     98
+    ],
+    [
+     "es",
+     36
+    ],
+    [
+     "fr",
+     18
+    ],
+    [
+     "de",
+     10
+    ]
+   ],
+   "language_count_capped": false,
+   "tlds": [
+    [
+     "gov",
+     11377291
+    ]
+   ],
+   "dead_known": false,
+   "dead_share": null,
+   "dead_sampled": 0,
+   "seed_known": false,
+   "seed_count": null,
+   "has_profile": true
+  },
+  {
+   "id": "independent-media-afghanistan",
+   "title": "Independent Media Afghanistan",
+   "blurb": "Afghan newsrooms archived daily since the Taliban's return to power, many of them now publishing from outside the country.",
+   "category": "press",
+   "kind": "articles",
+   "count": 10854210,
+   "share": 0.001332760375499206,
+   "indexes": [
+    "object",
+    "text"
+   ],
+   "index_updated": "2026-08-30",
+   "index_age_days": 1,
+   "api_title": "Independent Media Afghanistan",
+   "api_description": "Search #count Independent Media Afghanistan news articles using an index built from anchor text, all URL parts (file names, hosts, domains), MIME Types, HTTP Status codes and the full text of the articles.\r\n<br><br>\r\nThis Collection was created in collaboration with the <a href=\"https://rima.media/en\">Russian Independent Media Archive</a>, a project of <a href=\"https://pen.org/\">PEN America</a> and <a href=\"https://www.bard.edu/\">BARD College</a>.",
+   "search_url": "https://web.archive.org/collection-search/independent-media-afghanistan",
+   "item_url": "https://archive.org/details/independent-media-afghanistan",
+   "item": {
+    "id": "independent-media-afghanistan",
+    "title": "Independent Media Afghanistan",
+    "curator": "willmhowes",
+    "public_date": "2024-09-10",
+    "subject": ""
+   },
+   "years": {
+    "2024": 4257204,
+    "2025": 3327937,
+    "2026": 3269069
+   },
+   "year_min": "2024",
+   "year_max": "2026",
+   "years_capped": false,
+   "top_domains": [
+    [
+     "tolonews.com",
+     3905541
+    ],
+    [
+     "youtube.com",
+     1191868
+    ],
+    [
+     "wikipedia.org",
+     668862
+    ],
+    [
+     "apple.com",
+     600779
+    ],
+    [
+     "ariananews.af",
+     291540
+    ],
+    [
+     "slideshare.net",
+     289383
+    ]
+   ],
+   "domain_count_capped": true,
+   "top_languages": [
+    [
+     "en",
+     4439835
+    ],
+    [
+     "fa",
+     2058799
+    ],
+    [
+     "ps",
+     1196972
+    ],
+    [
+     "qu",
+     326675
+    ],
+    [
+     "de",
+     122948
+    ],
+    [
+     "es",
+     109009
+    ]
+   ],
+   "language_count_capped": true,
+   "tlds": [
+    [
+     "com",
+     8428686
+    ],
+    [
+     "org",
+     914249
+    ],
+    [
+     "af",
+     483749
+    ],
+    [
+     "net",
+     431244
+    ],
+    [
+     "ru",
+     67506
+    ],
+    [
+     "de",
+     63005
+    ]
+   ],
+   "dead_known": true,
+   "dead_share": 0.6312224964281419,
+   "dead_sampled": 7573789,
+   "seed_known": true,
+   "seed_count": 4181024,
+   "has_profile": true
+  },
+  {
+   "id": "unicef",
+   "title": "UNICEF",
+   "blurb": "The UN children's agency's global web presence, across country offices and reporting in many languages.",
+   "category": "topic",
+   "kind": "web pages",
+   "count": 10408316,
+   "share": 0.0012780102043791666,
+   "indexes": [
+    "text"
+   ],
+   "index_updated": "2026-02-18",
+   "index_age_days": 194,
+   "api_title": "UNICEF",
+   "api_description": "Search #count UNICEF web pages using an index built from anchor text,\nall URL parts (file names, hosts, domains), MIME Types, HTTP Status\ncodes and the full text of the pages",
+   "search_url": "https://web.archive.org/collection-search/unicef",
+   "item_url": "",
+   "item": null,
+   "years": {
+    "2004": 154914,
+    "2005": 75469,
+    "2006": 177721,
+    "2007": 112731,
+    "2008": 69141,
+    "2009": 61072,
+    "2011": 7630,
+    "2012": 13323,
+    "2015": 32044,
+    "2017": 7618,
+    "2020": 39159,
+    "2021": 259997,
+    "2022": 214289,
+    "2023": 91065,
+    "2024": 42744,
+    "2025": 8214703,
+    "2026": 792641
+   },
+   "year_min": "2004",
+   "year_max": "2026",
+   "years_capped": true,
+   "top_domains": [
+    [
+     "youtube.com",
+     2596829
+    ],
+    [
+     "live.com",
+     2362074
+    ],
+    [
+     "unicef.org",
+     1463676
+    ],
+    [
+     "github.com",
+     1170115
+    ],
+    [
+     "pinterest.com",
+     812141
+    ],
+    [
+     "linkedin.com",
+     210435
+    ]
+   ],
+   "domain_count_capped": true,
+   "top_languages": [
+    [
+     "en",
+     3893083
+    ],
+    [
+     "es",
+     244818
+    ],
+    [
+     "la",
+     185901
+    ],
+    [
+     "qu",
+     124275
+    ],
+    [
+     "fr",
+     74299
+    ],
+    [
+     "ja",
+     58080
+    ]
+   ],
+   "language_count_capped": true,
+   "tlds": [
+    [
+     "com",
+     8382143
+    ],
+    [
+     "org",
+     1737228
+    ],
+    [
+     "ne.jp",
+     31722
+    ],
+    [
+     "gov",
+     23477
+    ],
+    [
+     "co.uk",
+     15714
+    ],
+    [
+     "fr",
+     13002
+    ]
+   ],
+   "dead_known": true,
+   "dead_share": 0.1509145270806188,
+   "dead_sampled": 6221959,
+   "seed_known": false,
+   "seed_count": null,
+   "has_profile": true
+  },
+  {
+   "id": "independent-media-belarus",
+   "title": "Independent Media Belarus",
+   "blurb": "Belarusian outlets shut down, blocked or labelled extremist after the 2020 protests, crawled daily from a curated seed list.",
+   "category": "press",
+   "kind": "articles",
+   "count": 9400646,
+   "share": 0.0011542810110450332,
+   "indexes": [
+    "object",
+    "text"
+   ],
+   "index_updated": "2026-08-30",
+   "index_age_days": 1,
+   "api_title": "Independent Media Belarus",
+   "api_description": "Search #count Independent Media Belarus news articles using an index built from anchor text,\r\nall URL parts (file names, hosts, domains), MIME Types, HTTP Status\r\ncodes and the full text of the articles.\r\n<br><br>\r\nThis Collection was created in collaboration with the <a href=\"https://rima.media/en\">Russian Independent Media Archive</a>, a project of <a href=\"https://pen.org/\">PEN America</a> and <a href=\"https://www.bard.edu/\">BARD College</a>.",
+   "search_url": "https://web.archive.org/collection-search/independent-media-belarus",
+   "item_url": "https://archive.org/details/independent-media-belarus",
+   "item": {
+    "id": "independent-media-belarus",
+    "title": "Independent Media Belarus",
+    "curator": "willmhowes",
+    "public_date": "2024-08-22",
+    "subject": ""
+   },
+   "years": {
+    "2024": 5159750,
+    "2025": 3380657,
+    "2026": 860239
+   },
+   "year_min": "2024",
+   "year_max": "2026",
+   "years_capped": false,
+   "top_domains": [
+    [
+     "svaboda.org",
+     3031769
+    ],
+    [
+     "apple.com",
+     580338
+    ],
+    [
+     "euroradio.fm",
+     498050
+    ],
+    [
+     "nashaniva.com",
+     466329
+    ],
+    [
+     "c97.org",
+     425165
+    ],
+    [
+     "vkontakte.ru",
+     350486
+    ]
+   ],
+   "domain_count_capped": true,
+   "top_languages": [
+    [
+     "be",
+     3846454
+    ],
+    [
+     "ru",
+     2234404
+    ],
+    [
+     "en",
+     1976486
+    ],
+    [
+     "es",
+     180756
+    ],
+    [
+     "de",
+     177096
+    ],
+    [
+     "pl",
+     176647
+    ]
+   ],
+   "language_count_capped": true,
+   "tlds": [
+    [
+     "org",
+     3977460
+    ],
+    [
+     "com",
+     2678648
+    ],
+    [
+     "fm",
+     522701
+    ],
+    [
+     "ru",
+     498991
+    ],
+    [
+     "net",
+     262529
+    ],
+    [
+     "io",
+     222154
+    ]
+   ],
+   "dead_known": true,
+   "dead_share": 0.49926272802186944,
+   "dead_sampled": 8221525,
+   "seed_known": true,
+   "seed_count": 4013969,
+   "has_profile": true
+  },
+  {
+   "id": "covid",
+   "title": "COVID-19 Research",
+   "blurb": "Pandemic research repositories \u2014 NCBI, China's NGDC and NMDC \u2014 archived while the science was moving fastest.",
+   "category": "topic",
+   "kind": "web pages",
+   "count": 8891009,
+   "share": 0.001091704001802694,
+   "indexes": [
+    "text"
+   ],
+   "index_updated": "2023-09-01",
+   "index_age_days": 1095,
+   "api_title": "COVID",
+   "api_description": " Search #count web pages using an index built from anchor text,\r\n all URL parts (file names, hosts, domains), MIME Types, HTTP Status\r\ncodes and the full text of <a href=\"http://ncbi.nlm.nih.gov/\">http://ncbi.nlm.nih.gov/</a>,\r\n<a href=\"http://ngdc.cncb.ac.cn/\">http://ngdc.cncb.ac.cn/</a> and\r\n<a href=\"http://nmdc.cn/\">http://nmdc.cn/</a>",
+   "search_url": "https://web.archive.org/collection-search/covid",
+   "item_url": "",
+   "item": null,
+   "years": {
+    "2004": 163097,
+    "2005": 1546520,
+    "2006": 965668,
+    "2007": 90510,
+    "2008": 165814,
+    "2009": 287513,
+    "2010": 361585,
+    "2011": 148751,
+    "2015": 343824,
+    "2016": 259821,
+    "2017": 425576,
+    "2018": 473015,
+    "2019": 1067611,
+    "2020": 489780,
+    "2021": 587766,
+    "2022": 753522,
+    "2023": 375454
+   },
+   "year_min": "2004",
+   "year_max": "2023",
+   "years_capped": true,
+   "top_domains": [
+    [
+     "ca.gov",
+     4494731
+    ],
+    [
+     "nih.gov",
+     2953821
+    ],
+    [
+     "bts.gov",
+     569013
+    ],
+    [
+     "acquisition.gov",
+     287656
+    ],
+    [
+     "brokenarrowok.gov",
+     66129
+    ],
+    [
+     "broadbandmap.gov",
+     51793
+    ]
+   ],
+   "domain_count_capped": true,
+   "top_languages": [
+    [
+     "en",
+     7921171
+    ],
+    [
+     "rw",
+     493261
+    ],
+    [
+     "la",
+     367462
+    ],
+    [
+     "es",
+     34545
+    ],
+    [
+     "br",
+     7126
+    ],
+    [
+     "et",
+     7001
+    ]
+   ],
+   "language_count_capped": true,
+   "tlds": [
+    [
+     "gov",
+     8883927
+    ],
+    [
+     "ac.cn",
+     7075
+    ],
+    [
+     "cn",
+     7
+    ]
+   ],
+   "dead_known": true,
+   "dead_share": 0.841236438445925,
+   "dead_sampled": 3671869,
+   "seed_known": false,
+   "seed_count": null,
+   "has_profile": true
+  },
+  {
+   "id": "EndOfTerm2008WebCrawls",
+   "title": "End of Term 2008",
+   "blurb": "The first End of Term crawl: the U.S. federal web as it stood at the Bush-to-Obama transition, gathered with the California Digital Library.",
+   "category": "gov",
+   "kind": "web pages",
+   "count": 7817694,
+   "share": 0.0009599144286850807,
+   "indexes": [
+    "text"
+   ],
+   "index_updated": "2023-02-01",
+   "index_age_days": 1307,
+   "api_title": "End Of Term (US Gov) 2008",
+   "api_description": "Search #count web pages using an index built from anchor text,\r\nall URL parts (file names, hosts, domains), MIME Types, language,\r\nHTTP Status codes and the full text of the web pages.",
+   "search_url": "https://web.archive.org/collection-search/EndOfTerm2008WebCrawls",
+   "item_url": "https://archive.org/details/cdlweb",
+   "item": {
+    "id": "cdlweb",
+    "title": "End of Term 2008 California Digital Library Crawl",
+    "curator": "alexis",
+    "public_date": "2012-04-03",
+    "subject": ""
+   },
+   "years": {
+    "2008": 2609982,
+    "2009": 5207712
+   },
+   "year_min": "2008",
+   "year_max": "2009",
+   "years_capped": false,
+   "top_domains": [
+    [
+     "house.gov",
+     1831056
+    ],
+    [
+     "senate.gov",
+     918286
+    ],
+    [
+     "va.gov",
+     315784
+    ],
+    [
+     "lanl.gov",
+     293517
+    ],
+    [
+     "clinicaltrials.gov",
+     190903
+    ],
+    [
+     "nasa.gov",
+     183665
+    ]
+   ],
+   "domain_count_capped": true,
+   "top_languages": [
+    [
+     "en",
+     7590308
+    ],
+    [
+     "es",
+     58708
+    ],
+    [
+     "da",
+     39043
+    ],
+    [
+     "xh",
+     21323
+    ],
+    [
+     "fr",
+     17943
+    ],
+    [
+     "la",
+     7088
+    ]
+   ],
+   "language_count_capped": true,
+   "tlds": [
+    [
+     "gov",
+     7663742
+    ],
+    [
+     "org",
+     44270
+    ],
+    [
+     "com",
+     35178
+    ],
+    [
+     "mil",
+     29368
+    ],
+    [
+     "fed.us",
+     18395
+    ],
+    [
+     "edu",
+     8307
+    ]
+   ],
+   "dead_known": true,
+   "dead_share": 0.8467372758091228,
+   "dead_sampled": 7786055,
+   "seed_known": false,
+   "seed_count": null,
+   "has_profile": true
+  },
+  {
+   "id": "towcenter-pink-slime-news-sites",
+   "title": "\"Pink Slime\" Local News",
+   "blurb": "Partisan, largely automated sites that present themselves as local newspapers, identified by Columbia's Tow Center for Digital Journalism.",
+   "category": "news",
+   "kind": "web pages",
+   "count": 7795994,
+   "share": 0.0009572499418041071,
+   "indexes": [
+    "text"
+   ],
+   "index_updated": "2026-07-18",
+   "index_age_days": 44,
+   "api_title": "Local Partisan News, AKA \"Pink Slime\"",
+   "api_description": "Search #count web pages using an index built from anchor text,\r\nall URL parts (file names, hosts, domains), MIME Types, HTTP Status\r\ncodes and the full text of the web pages.",
+   "search_url": "https://web.archive.org/collection-search/towcenter-pink-slime-news-sites",
+   "item_url": "https://archive.org/details/towcenter-pink-slime-news-sites",
+   "item": {
+    "id": "towcenter-pink-slime-news-sites",
+    "title": "Tow Center Pink Slime News Sites",
+    "curator": "corentin",
+    "public_date": "2024-06-25",
+    "subject": ""
+   },
+   "years": {
+    "2024": 4611182,
+    "2025": 2288029,
+    "2026": 896783
+   },
+   "year_min": "2024",
+   "year_max": "2026",
+   "years_capped": false,
+   "top_domains": [
+    [
+     "blockshopper.com",
+     649107
+    ],
+    [
+     "apple.com",
+     159311
+    ],
+    [
+     "tennesseestar.com",
+     133905
+    ],
+    [
+     "youtube.com",
+     110560
+    ],
+    [
+     "facebook.com",
+     69231
+    ],
+    [
+     "espn.com",
+     65146
+    ]
+   ],
+   "domain_count_capped": true,
+   "top_languages": [
+    [
+     "en",
+     7252283
+    ],
+    [
+     "es",
+     75100
+    ],
+    [
+     "qu",
+     41649
+    ],
+    [
+     "la",
+     38098
+    ],
+    [
+     "de",
+     33771
+    ],
+    [
+     "fr",
+     31817
+    ]
+   ],
+   "language_count_capped": true,
+   "tlds": [
+    [
+     "com",
+     7107789
+    ],
+    [
+     "org",
+     242124
+    ],
+    [
+     "gov",
+     163854
+    ],
+    [
+     "edu",
+     49257
+    ],
+    [
+     "in",
+     27488
+    ],
+    [
+     "net",
+     21863
+    ]
+   ],
+   "dead_known": true,
+   "dead_share": 0.5786041824121584,
+   "dead_sampled": 6511123,
+   "seed_known": true,
+   "seed_count": 2069462,
+   "has_profile": true
+  },
+  {
+   "id": "independent-media-central-america",
+   "title": "Exile Media Central America",
+   "blurb": "Central American newsrooms \u2014 notably Nicaraguan and Salvadoran \u2014 reporting from exile after raids, seizures and prosecutions.",
+   "category": "press",
+   "kind": "articles",
+   "count": 7381530,
+   "share": 0.0009063589791019939,
+   "indexes": [
+    "object",
+    "text"
+   ],
+   "index_updated": "2026-08-30",
+   "index_age_days": 1,
+   "api_title": "Independent Media Central America",
+   "api_description": "Search #count Independent Media Central America news articles using an index built from anchor text,\r\nall URL parts (file names, hosts, domains), MIME Types, HTTP Status\r\ncodes and the full text of the articles.\r\n<br><br>\r\nThis Collection was created in collaboration with the <a href=\"https://rima.media/en\">Russian Independent Media Archive</a>, a project of <a href=\"https://pen.org/\">PEN America</a> and <a href=\"https://www.bard.edu/\">BARD College</a>.",
+   "search_url": "https://web.archive.org/collection-search/independent-media-central-america",
+   "item_url": "https://archive.org/details/independent-media-central-america",
+   "item": {
+    "id": "independent-media-central-america",
+    "title": "Exile Media Central America",
+    "curator": "corentin",
+    "public_date": "2024-08-21",
+    "subject": ""
+   },
+   "years": {
+    "2024": 1513620,
+    "2025": 3646574,
+    "2026": 2221336
+   },
+   "year_min": "2024",
+   "year_max": "2026",
+   "years_capped": false,
+   "top_domains": [
+    [
+     "prensalibre.com",
+     657948
+    ],
+    [
+     "apple.com",
+     603577
+    ],
+    [
+     "youtube.com",
+     467600
+    ],
+    [
+     "facebook.com",
+     297084
+    ],
+    [
+     "wikipedia.org",
+     219376
+    ],
+    [
+     "jsdelivr.com",
+     215787
+    ]
+   ],
+   "domain_count_capped": true,
+   "top_languages": [
+    [
+     "es",
+     3354991
+    ],
+    [
+     "en",
+     1895087
+    ],
+    [
+     "qu",
+     405033
+    ],
+    [
+     "pt",
+     173559
+    ],
+    [
+     "fr",
+     127963
+    ],
+    [
+     "la",
+     88333
+    ]
+   ],
+   "language_count_capped": true,
+   "tlds": [
+    [
+     "com",
+     4281318
+    ],
+    [
+     "com.gt",
+     1508061
+    ],
+    [
+     "org",
+     509072
+    ],
+    [
+     "digital",
+     72416
+    ],
+    [
+     "es",
+     65872
+    ],
+    [
+     "com.br",
+     63809
+    ]
+   ],
+   "dead_known": true,
+   "dead_share": 0.20519804579907755,
+   "dead_sampled": 5036739,
+   "seed_known": true,
+   "seed_count": 143887,
+   "has_profile": true
+  },
+  {
+   "id": "badoo.com",
+   "title": "Badoo Profiles",
+   "blurb": "Public profile pages from the dating and social network, captured across more than a decade of the site.",
+   "category": "platform",
+   "kind": "web pages",
+   "count": 4536712,
+   "share": 0.0005570511339518725,
+   "indexes": [
+    "text"
+   ],
+   "index_updated": "2023-02-01",
+   "index_age_days": 1307,
+   "api_title": "badoo.com",
+   "api_description": "",
+   "search_url": "https://web.archive.org/collection-search/badoo.com",
+   "item_url": "",
+   "item": null,
+   "years": {
+    "2006": 328,
+    "2007": 6368,
+    "2008": 152946,
+    "2009": 566989,
+    "2010": 324505,
+    "2011": 569461,
+    "2012": 1188155,
+    "2013": 763800,
+    "2014": 354534,
+    "2015": 563658,
+    "2016": 12382,
+    "2017": 8211,
+    "2018": 6310,
+    "2019": 6085,
+    "2020": 2,
+    "2022": 12978
+   },
+   "year_min": "2006",
+   "year_max": "2022",
+   "years_capped": false,
+   "top_domains": [
+    [
+     "badoo.com",
+     4536712
+    ]
+   ],
+   "domain_count_capped": false,
+   "top_languages": [
+    [
+     "en",
+     1231858
+    ],
+    [
+     "es",
+     852060
+    ],
+    [
+     "fr",
+     319381
+    ],
+    [
+     "pt",
+     244211
+    ],
+    [
+     "it",
+     224052
+    ],
+    [
+     "la",
+     139955
+    ]
+   ],
+   "language_count_capped": true,
+   "tlds": [
+    [
+     "com",
+     4536712
+    ]
+   ],
+   "dead_known": false,
+   "dead_share": null,
+   "dead_sampled": 0,
+   "seed_known": false,
+   "seed_count": null,
+   "has_profile": true
+  },
+  {
+   "id": "HongKong",
+   "title": "Hong Kong Shuttered Newsrooms",
+   "blurb": "A combined archive of Hong Kong news organisations that closed under the national security law: Apple Daily, Stand News, Citizen News and FactWire.",
+   "category": "press",
+   "kind": "web pages",
+   "count": 3517790,
+   "share": 0.00043194033663687654,
+   "indexes": [
+    "object",
+    "text"
+   ],
+   "index_updated": "2023-11-06",
+   "index_age_days": 1029,
+   "api_title": "Hong Kong news organizations that have been shut down",
+   "api_description": "Search #count web pages from Hong Kong news organizations that have been\r\nshut down using an index built from anchor text, all URL parts (file names,\r\nhosts, domains), MIME Types, HTTP Status codes and the full text of the web pages.\r\nThis collection includes web pages from <a href=\"/web/*/factwire.com\">factwire.com</a>,\r\n<a href=\"/web/*/hk.appledaily.com\">hk.appledaily.com</a>,\r\n<a href=\"/web/*/hkcnews.com\">hkcnews.com</a> and\r\n<a href=\"/web/*/thestandnews.com\">thestandnews.com</a>.",
+   "search_url": "https://web.archive.org/collection-search/HongKong",
+   "item_url": "",
+   "item": null,
+   "years": {
+    "2015": 9339,
+    "2016": 23889,
+    "2017": 17995,
+    "2018": 21461,
+    "2019": 53469,
+    "2020": 204357,
+    "2021": 3186629,
+    "2022": 650,
+    "2023": 1
+   },
+   "year_min": "2015",
+   "year_max": "2023",
+   "years_capped": false,
+   "top_domains": [
+    [
+     "appledaily.com",
+     3268655
+    ],
+    [
+     "thestandnews.com",
+     248000
+    ],
+    [
+     "factwire.org",
+     1135
+    ]
+   ],
+   "domain_count_capped": false,
+   "top_languages": [
+    [
+     "zh",
+     3499522
+    ],
+    [
+     "en",
+     17595
+    ],
+    [
+     "ja",
+     400
+    ],
+    [
+     "la",
+     251
+    ],
+    [
+     "lb",
+     6
+    ],
+    [
+     "ko",
+     4
+    ]
+   ],
+   "language_count_capped": false,
+   "tlds": [
+    [
+     "com",
+     3516655
+    ],
+    [
+     "org",
+     1135
+    ]
+   ],
+   "dead_known": false,
+   "dead_share": null,
+   "dead_sampled": 0,
+   "seed_known": false,
+   "seed_count": null,
+   "has_profile": true
+  },
+  {
+   "id": "hk.appledaily.com",
+   "title": "Apple Daily Hong Kong",
+   "blurb": "The pro-democracy tabloid forced to close in June 2021 after its assets were frozen and executives arrested.",
+   "category": "press",
+   "kind": "web pages",
+   "count": 3268655,
+   "share": 0.00040134969428243575,
+   "indexes": [
+    "text"
+   ],
+   "index_updated": "2023-02-01",
+   "index_age_days": 1307,
+   "api_title": "hk.appledaily.com",
+   "api_description": "Search #count hk.appledaily.com web pages using an index built from anchor text,\r\nall URL parts (file names, hosts, domains), MIME Types, HTTP Status\r\ncodes and the full text of the web pages.",
+   "search_url": "https://web.archive.org/collection-search/hk.appledaily.com",
+   "item_url": "",
+   "item": null,
+   "years": {
+    "2017": 2,
+    "2018": 294,
+    "2019": 3908,
+    "2020": 161220,
+    "2021": 3103231
+   },
+   "year_min": "2017",
+   "year_max": "2021",
+   "years_capped": false,
+   "top_domains": [
+    [
+     "appledaily.com",
+     3268655
+    ]
+   ],
+   "domain_count_capped": false,
+   "top_languages": [
+    [
+     "zh",
+     3252438
+    ],
+    [
+     "en",
+     15770
+    ],
+    [
+     "ja",
+     308
+    ],
+    [
+     "la",
+     132
+    ],
+    [
+     "ko",
+     2
+    ],
+    [
+     "rw",
+     2
+    ]
+   ],
+   "language_count_capped": false,
+   "tlds": [
+    [
+     "com",
+     3268655
+    ]
+   ],
+   "dead_known": false,
+   "dead_share": null,
+   "dead_sampled": 0,
+   "seed_known": false,
+   "seed_count": null,
+   "has_profile": true
+  },
+  {
+   "id": "congress.gov",
+   "title": "Congress.gov",
+   "blurb": "The official site for U.S. federal legislation: bills, resolutions, roll-call votes and the Congressional Record.",
+   "category": "gov",
+   "kind": "web pages",
+   "count": 2912755,
+   "share": 0.0003576496536861909,
+   "indexes": [
+    "text"
+   ],
+   "index_updated": "2024-03-28",
+   "index_age_days": 886,
+   "api_title": "congress.gov",
+   "api_description": "Search #count congress.gov web pages using an index built from anchor text,\r\nall URL parts (file names, hosts, domains), MIME Types, language,\r\nHTTP Status codes and the full text of the web pages.",
+   "search_url": "https://web.archive.org/collection-search/congress.gov",
+   "item_url": "",
+   "item": null,
+   "years": {
+    "2014": 697,
+    "2015": 53702,
+    "2016": 94352,
+    "2017": 634712,
+    "2018": 16408,
+    "2019": 78503,
+    "2020": 1169160,
+    "2021": 104891,
+    "2022": 748506,
+    "2023": 6720,
+    "2024": 5104
+   },
+   "year_min": "2014",
+   "year_max": "2024",
+   "years_capped": false,
+   "top_domains": [
+    [
+     "congress.gov",
+     2912755
+    ]
+   ],
+   "domain_count_capped": false,
+   "top_languages": [
+    [
+     "en",
+     2906334
+    ],
+    [
+     "de",
+     4924
+    ],
+    [
+     "lb",
+     1463
+    ],
+    [
+     "no",
+     19
+    ],
+    [
+     "es",
+     5
+    ],
+    [
+     "br",
+     3
+    ]
+   ],
+   "language_count_capped": false,
+   "tlds": [
+    [
+     "gov",
+     2912755
+    ]
+   ],
+   "dead_known": false,
+   "dead_share": null,
+   "dead_sampled": 0,
+   "seed_known": false,
+   "seed_count": null,
+   "has_profile": true
+  },
+  {
+   "id": "northkorea",
+   "title": "North Korea",
+   "blurb": "An Archive-It crawl of sites about and from the DPRK, including state media and outside monitoring projects.",
+   "category": "topic",
+   "kind": "web pages",
+   "count": 2157743,
+   "share": 0.00026494368276556133,
+   "indexes": [
+    "text"
+   ],
+   "index_updated": "2024-11-16",
+   "index_age_days": 653,
+   "api_title": "North Korea",
+   "api_description": "Search #count web pages using an index built from anchor text,\r\nall URL parts (file names, hosts, domains), MIME Types, language,\r\nHTTP Status codes and the full text of the web pages.",
+   "search_url": "https://web.archive.org/collection-search/northkorea",
+   "item_url": "https://archive.org/details/ArchiveIt-Collection-6777",
+   "item": {
+    "id": "ArchiveIt-Collection-6777",
+    "title": "North Korea",
+    "curator": "archiveit-uploads",
+    "public_date": "2016-01-30",
+    "subject": ""
+   },
+   "years": {
+    "2017": 220089,
+    "2018": 156031,
+    "2019": 169013,
+    "2020": 133756,
+    "2021": 357249,
+    "2022": 406992,
+    "2023": 256921,
+    "2024": 457692
+   },
+   "year_min": "2017",
+   "year_max": "2024",
+   "years_capped": false,
+   "top_domains": [
+    [
+     "dprk-tour.com",
+     513658
+    ],
+    [
+     "uriminzokkiri.com",
+     475207
+    ],
+    [
+     "rodong.rep.kp",
+     474713
+    ],
+    [
+     "north-korea-books.com",
+     116913
+    ],
+    [
+     "gsusigmanu.org",
+     97002
+    ],
+    [
+     "pyongyangtimes.com.kp",
+     60453
+    ]
+   ],
+   "domain_count_capped": true,
+   "top_languages": [
+    [
+     "ko",
+     838241
+    ],
+    [
+     "en",
+     588439
+    ],
+    [
+     "zh",
+     149554
+    ],
+    [
+     "fr",
+     89723
+    ],
+    [
+     "es",
+     86987
+    ],
+    [
+     "ar",
+     86981
+    ]
+   ],
+   "language_count_capped": true,
+   "tlds": [
+    [
+     "com",
+     1306073
+    ],
+    [
+     "rep.kp",
+     503812
+    ],
+    [
+     "org",
+     132679
+    ],
+    [
+     "com.kp",
+     111003
+    ],
+    [
+     "gov.kp",
+     33071
+    ],
+    [
+     "org.kp",
+     25913
+    ]
+   ],
+   "dead_known": true,
+   "dead_share": 0.8716598757801889,
+   "dead_sampled": 327645,
+   "seed_known": false,
+   "seed_count": null,
+   "has_profile": true
+  },
+  {
+   "id": "EndOfTerm2024Videos",
+   "title": "End of Term 2024 Video",
+   "blurb": "Video files harvested from U.S. government sites during the 2024 transition crawl, searchable by surrounding page text.",
+   "category": "gov",
+   "kind": "videos",
+   "count": 2044054,
+   "share": 0.00025098410447012303,
+   "indexes": [
+    "text"
+   ],
+   "index_updated": "2025-09-08",
+   "index_age_days": 357,
+   "api_title": "End Of Term (US Gov) Videos 2024",
+   "api_description": "Search #count videos using an index built from anchor text, all URL parts (file names, hosts, domains), MIME Types, HTTP Status\ncodes and the full text of the report.",
+   "search_url": "https://web.archive.org/collection-search/EndOfTerm2024Videos",
+   "item_url": "",
+   "item": null,
+   "years": {
+    "2009": 2339,
+    "2010": 3933,
+    "2011": 5889,
+    "2012": 10819,
+    "2013": 13700,
+    "2014": 23954,
+    "2015": 16741,
+    "2016": 27738,
+    "2017": 26716,
+    "2018": 29460,
+    "2019": 23291,
+    "2020": 72063,
+    "2021": 61791,
+    "2022": 139453,
+    "2023": 107544,
+    "2024": 905527,
+    "2025": 572996
+   },
+   "year_min": "2009",
+   "year_max": "2025",
+   "years_capped": true,
+   "top_domains": [
+    [
+     "youtube.com",
+     2044054
+    ]
+   ],
+   "domain_count_capped": false,
+   "top_languages": [
+    [
+     "en",
+     629501
+    ],
+    [
+     "ru",
+     179398
+    ],
+    [
+     "fa",
+     142467
+    ],
+    [
+     "zh",
+     127760
+    ],
+    [
+     "hy",
+     97494
+    ],
+    [
+     "ar",
+     88724
+    ]
+   ],
+   "language_count_capped": true,
+   "tlds": [
+    [
+     "com",
+     2044054
+    ]
+   ],
+   "dead_known": true,
+   "dead_share": 0.008399985909511666,
+   "dead_sampled": 2043932,
+   "seed_known": false,
+   "seed_count": null,
+   "has_profile": true
+  },
+  {
+   "id": "hkcnews.com",
+   "title": "Citizen News Hong Kong",
+   "blurb": "Independent Hong Kong outlet founded by veteran journalists; it shut down in January 2022, citing the safety of its staff.",
+   "category": "press",
+   "kind": "web pages",
+   "count": 1899066,
+   "share": 0.00023318140290797535,
+   "indexes": [
+    "text"
+   ],
+   "index_updated": "2023-07-01",
+   "index_age_days": 1157,
+   "api_title": "hkcnews.com",
+   "api_description": " Search #count web pages using an index built from anchor text,\r\nall URL parts (file names, hosts, domains), MIME Types, language,\r\nHTTP Status codes and the full text of the web pages.",
+   "search_url": "https://web.archive.org/collection-search/hkcnews.com",
+   "item_url": "",
+   "item": null,
+   "years": {
+    "2017": 2303,
+    "2018": 406,
+    "2019": 4627,
+    "2020": 15447,
+    "2021": 1746262,
+    "2022": 127755,
+    "2023": 2266
+   },
+   "year_min": "2017",
+   "year_max": "2023",
+   "years_capped": false,
+   "top_domains": [
+    [
+     "hkcnews.com",
+     1899066
+    ]
+   ],
+   "domain_count_capped": false,
+   "top_languages": [
+    [
+     "zh",
+     1874497
+    ],
+    [
+     "en",
+     22791
+    ],
+    [
+     "la",
+     1321
+    ],
+    [
+     "ja",
+     456
+    ],
+    [
+     "lb",
+     1
+    ]
+   ],
+   "language_count_capped": false,
+   "tlds": [
+    [
+     "com",
+     1899066
+    ]
+   ],
+   "dead_known": false,
+   "dead_share": null,
+   "dead_sampled": 0,
+   "seed_known": false,
+   "seed_count": null,
+   "has_profile": true
+  },
+  {
+   "id": "vice.com",
+   "title": "VICE",
+   "blurb": "VICE's website as it stood before the 2023 bankruptcy and the retrenchment that followed it.",
+   "category": "news",
+   "kind": "web pages",
+   "count": 1627368,
+   "share": 0.00019982030813439134,
+   "indexes": [
+    "text"
+   ],
+   "index_updated": "2024-03-07",
+   "index_age_days": 907,
+   "api_title": "vice.com",
+   "api_description": "Search #count vice.com web pages using an index built from anchor text,\r\nall URL parts (file names, hosts, domains), MIME Types, HTTP Status\r\ncodes and the full text of the web pages.",
+   "search_url": "https://web.archive.org/collection-search/vice.com",
+   "item_url": "",
+   "item": null,
+   "years": {
+    "2011": 86,
+    "2012": 4464,
+    "2013": 5238,
+    "2014": 7141,
+    "2015": 6314,
+    "2016": 10013,
+    "2017": 9999,
+    "2018": 34171,
+    "2019": 368547,
+    "2020": 248006,
+    "2021": 30943,
+    "2022": 21408,
+    "2023": 592600,
+    "2024": 288438
+   },
+   "year_min": "2011",
+   "year_max": "2024",
+   "years_capped": false,
+   "top_domains": [
+    [
+     "vice.com",
+     1627368
+    ]
+   ],
+   "domain_count_capped": false,
+   "top_languages": [
+    [
+     "en",
+     1076016
+    ],
+    [
+     "de",
+     154193
+    ],
+    [
+     "es",
+     75390
+    ],
+    [
+     "nl",
+     47409
+    ],
+    [
+     "fr",
+     44470
+    ],
+    [
+     "el",
+     37489
+    ]
+   ],
+   "language_count_capped": true,
+   "tlds": [
+    [
+     "com",
+     1627368
+    ]
+   ],
+   "dead_known": false,
+   "dead_share": null,
+   "dead_sampled": 0,
+   "seed_known": false,
+   "seed_count": null,
+   "has_profile": true
+  },
+  {
+   "id": "scmp.com",
+   "title": "South China Morning Post",
+   "blurb": "Hong Kong's English-language daily of record, archived across its shift from independent ownership to Alibaba.",
+   "category": "news",
+   "kind": "web pages",
+   "count": 1495074,
+   "share": 0.00018357627000390632,
+   "indexes": [
+    "text"
+   ],
+   "index_updated": "2022-07-01",
+   "index_age_days": 1522,
+   "api_title": "South China Morning Post (scmp.com)",
+   "api_description": "Search #count scmp.com web pages using an index built from anchor text,\r\nall URL parts (file names, hosts, domains), MIME Types, HTTP Status\r\ncodes and the full text of the web pages.",
+   "search_url": "https://web.archive.org/collection-search/scmp.com",
+   "item_url": "",
+   "item": null,
+   "years": {
+    "1997": 22,
+    "1998": 48,
+    "2002": 171,
+    "2003": 22,
+    "2004": 17,
+    "2006": 22,
+    "2012": 24272,
+    "2013": 31805,
+    "2014": 30640,
+    "2015": 21065,
+    "2016": 26413,
+    "2017": 24259,
+    "2018": 19563,
+    "2019": 19649,
+    "2020": 91584,
+    "2021": 1075518,
+    "2022": 129973
+   },
+   "year_min": "1997",
+   "year_max": "2022",
+   "years_capped": true,
+   "top_domains": [
+    [
+     "scmp.com",
+     582978
+    ],
+    [
+     "usda.gov",
+     109712
+    ],
+    [
+     "nih.gov",
+     102097
+    ],
+    [
+     "commerce.gov",
+     73554
+    ],
+    [
+     "nasa.gov",
+     46054
+    ],
+    [
+     "pnnl.gov",
+     30257
+    ]
+   ],
+   "domain_count_capped": true,
+   "top_languages": [
+    [
+     "en",
+     1459862
+    ],
+    [
+     "mt",
+     4234
+    ],
+    [
+     "ca",
+     3461
+    ],
+    [
+     "es",
+     3325
+    ],
+    [
+     "fr",
+     2278
+    ],
+    [
+     "pt",
+     2070
+    ]
+   ],
+   "language_count_capped": true,
+   "tlds": [
+    [
+     "gov",
+     788980
+    ],
+    [
+     "com",
+     638022
+    ],
+    [
+     "org",
+     55161
+    ],
+    [
+     "edu",
+     10071
+    ],
+    [
+     "us",
+     1607
+    ],
+    [
+     "fed.us",
+     334
+    ]
+   ],
+   "dead_known": false,
+   "dead_share": null,
+   "dead_sampled": 0,
+   "seed_known": false,
+   "seed_count": null,
+   "has_profile": true
+  },
+  {
+   "id": "FOIAonline.gov",
+   "title": "FOIAonline Releases",
+   "blurb": "Records released through FOIAonline, the multi-agency U.S. FOIA request portal retired in 2023 \u2014 the released documents outlived the site.",
+   "category": "gov",
+   "kind": "PDF files",
+   "count": 1491835,
+   "share": 0.0001831785615703822,
+   "indexes": [
+    "object",
+    "text"
+   ],
+   "index_updated": "2023-11-06",
+   "index_age_days": 1029,
+   "api_title": "FOIAonline.gov PDFs",
+   "api_description": "Search #count FOIAonline.gov PDF files using an index built from anchor text, all\r\nURL parts (file names, hosts, domains), MIME Types, HTTP Status codes\r\nand all the text from the first two pages of PDF documents.",
+   "search_url": "https://web.archive.org/collection-search/FOIAonline.gov",
+   "item_url": "",
+   "item": null,
+   "years": {
+    "2023": 1491835
+   },
+   "year_min": "2023",
+   "year_max": "2023",
+   "years_capped": false,
+   "top_domains": [
+    [
+     "foiaonline.gov",
+     1491835
+    ]
+   ],
+   "domain_count_capped": false,
+   "top_languages": [],
+   "language_count_capped": false,
+   "tlds": [
+    [
+     "gov",
+     1491835
+    ]
+   ],
+   "dead_known": false,
+   "dead_share": null,
+   "dead_sampled": 0,
+   "seed_known": false,
+   "seed_count": null,
+   "has_profile": true
+  },
+  {
+   "id": "us-state-department",
+   "title": "State Department on Twitter/X",
+   "blurb": "Archived Twitter/X posts from U.S. State Department accounts, including embassies and bureaus worldwide.",
+   "category": "gov",
+   "kind": "posts",
+   "count": 1483778,
+   "share": 0.00018218926337683358,
+   "indexes": [
+    "text"
+   ],
+   "index_updated": "2026-03-12",
+   "index_age_days": 172,
+   "api_title": "US State Department Twitter/X Posts",
+   "api_description": "Search #count US State Department Twitter/X Posts using an index built from anchor text, all URL parts (file names, hosts, domains), MIME Types, HTTP Status\ncodes and the full text of the pages",
+   "search_url": "https://web.archive.org/collection-search/us-state-department",
+   "item_url": "",
+   "item": null,
+   "years": {
+    "2010": 786,
+    "2011": 810,
+    "2012": 38,
+    "2013": 224,
+    "2014": 1649,
+    "2015": 4305,
+    "2016": 6316,
+    "2017": 10946,
+    "2018": 15838,
+    "2019": 176603,
+    "2020": 266071,
+    "2021": 270398,
+    "2022": 193245,
+    "2023": 27760,
+    "2024": 126151,
+    "2025": 5663,
+    "2026": 376975
+   },
+   "year_min": "2010",
+   "year_max": "2026",
+   "years_capped": true,
+   "top_domains": [
+    [
+     "twitter.com",
+     1483778
+    ]
+   ],
+   "domain_count_capped": false,
+   "top_languages": [
+    [
+     "en",
+     338067
+    ],
+    [
+     "de",
+     49631
+    ],
+    [
+     "es",
+     27321
+    ],
+    [
+     "ar",
+     21811
+    ],
+    [
+     "fi",
+     16213
+    ],
+    [
+     "la",
+     13162
+    ]
+   ],
+   "language_count_capped": true,
+   "tlds": [
+    [
+     "com",
+     1483778
+    ]
+   ],
+   "dead_known": true,
+   "dead_share": 0.5209130500773052,
+   "dead_sampled": 1377011,
+   "seed_known": false,
+   "seed_count": null,
+   "has_profile": true
+  },
+  {
+   "id": "epstein-files",
+   "title": "The Epstein Files",
+   "blurb": "Government documents released in the Jeffrey Epstein matter, indexed page by page so the text is searchable, not just the filenames.",
+   "category": "topic",
+   "kind": "PDF files",
+   "count": 1372519,
+   "share": 0.0001685280584970988,
+   "indexes": [
+    "object",
+    "text"
+   ],
+   "index_updated": "2026-03-08",
+   "index_age_days": 176,
+   "api_title": "The Epstein Files",
+   "api_description": "Search #count PDF files using an index built from anchor text, all URL parts (file names, hosts, domains), MIME Types, language, HTTP Status codes, Web Page Titles and all the text from the PDF documents.",
+   "search_url": "https://web.archive.org/collection-search/epstein-files",
+   "item_url": "",
+   "item": null,
+   "years": {
+    "2025": 4998,
+    "2026": 1367521
+   },
+   "year_min": "2025",
+   "year_max": "2026",
+   "years_capped": false,
+   "top_domains": [
+    [
+     "justice.gov",
+     1372519
+    ]
+   ],
+   "domain_count_capped": false,
+   "top_languages": [
+    [
+     "en",
+     5453
+    ]
+   ],
+   "language_count_capped": false,
+   "tlds": [
+    [
+     "gov",
+     1372519
+    ]
+   ],
+   "dead_known": false,
+   "dead_share": null,
+   "dead_sampled": 0,
+   "seed_known": false,
+   "seed_count": null,
+   "has_profile": true
+  },
+  {
+   "id": "gawker.com",
+   "title": "Gawker",
+   "blurb": "The New York media-and-gossip site bankrupted by the Hulk Hogan verdict and shut down in 2016.",
+   "category": "news",
+   "kind": "web pages",
+   "count": 1019168,
+   "share": 0.0001251410030188079,
+   "indexes": [
+    "text"
+   ],
+   "index_updated": "2023-02-01",
+   "index_age_days": 1307,
+   "api_title": "gawker.com",
+   "api_description": "Search #count web pages using an index built from anchor text,\r\nall URL parts (file names, hosts, domains), MIME Types, language,\r\nHTTP Status codes and the full text of the web pages.",
+   "search_url": "https://web.archive.org/collection-search/gawker.com",
+   "item_url": "",
+   "item": null,
+   "years": {
+    "2005": 6109,
+    "2006": 10097,
+    "2007": 67306,
+    "2008": 89871,
+    "2009": 102381,
+    "2010": 131258,
+    "2011": 71132,
+    "2012": 151459,
+    "2013": 115913,
+    "2014": 83114,
+    "2015": 40894,
+    "2016": 89809,
+    "2017": 4081,
+    "2018": 15673,
+    "2020": 15514,
+    "2021": 6093,
+    "2022": 12505
+   },
+   "year_min": "2005",
+   "year_max": "2022",
+   "years_capped": true,
+   "top_domains": [
+    [
+     "gawker.com",
+     1019168
+    ]
+   ],
+   "domain_count_capped": false,
+   "top_languages": [
+    [
+     "en",
+     1018757
+    ],
+    [
+     "la",
+     146
+    ],
+    [
+     "it",
+     76
+    ],
+    [
+     "no",
+     31
+    ],
+    [
+     "ru",
+     23
+    ],
+    [
+     "hu",
+     20
+    ]
+   ],
+   "language_count_capped": true,
+   "tlds": [
+    [
+     "com",
+     1019168
+    ]
+   ],
+   "dead_known": false,
+   "dead_share": null,
+   "dead_sampled": 0,
+   "seed_known": false,
+   "seed_count": null,
+   "has_profile": true
+  },
+  {
+   "id": "realdonaldtrump",
+   "title": "Donald Trump's Tweets",
+   "blurb": "Archived posts from @realDonaldTrump, including the years the account was suspended and its later reinstatement.",
+   "category": "platform",
+   "kind": "posts",
+   "count": 876261,
+   "share": 0.00010759382206492317,
+   "indexes": [
+    "text"
+   ],
+   "index_updated": "2026-03-03",
+   "index_age_days": 181,
+   "api_title": "Donald Trump's Tweets",
+   "api_description": "Search #count Donald Trump's Tweets using an index built from anchor text,\r\nall URL parts (file names, hosts, domains), MIME Types, language,\r\nHTTP Status codes and the full text of the web pages.",
+   "search_url": "https://web.archive.org/collection-search/realdonaldtrump",
+   "item_url": "",
+   "item": null,
+   "years": {
+    "2009": 2,
+    "2010": 28,
+    "2011": 17,
+    "2012": 65,
+    "2013": 121,
+    "2014": 438,
+    "2015": 1699,
+    "2016": 9185,
+    "2017": 40872,
+    "2018": 145748,
+    "2019": 259807,
+    "2020": 256276,
+    "2021": 41694,
+    "2022": 45858,
+    "2024": 27246,
+    "2025": 47065,
+    "2026": 140
+   },
+   "year_min": "2009",
+   "year_max": "2026",
+   "years_capped": true,
+   "top_domains": [
+    [
+     "twitter.com",
+     801810
+    ],
+    [
+     "x.com",
+     74451
+    ]
+   ],
+   "domain_count_capped": false,
+   "top_languages": [
+    [
+     "en",
+     484537
+    ],
+    [
+     "la",
+     99962
+    ],
+    [
+     "ru",
+     25027
+    ],
+    [
+     "ar",
+     13160
+    ],
+    [
+     "ta",
+     11809
+    ],
+    [
+     "el",
+     11617
+    ]
+   ],
+   "language_count_capped": true,
+   "tlds": [
+    [
+     "com",
+     876261
+    ]
+   ],
+   "dead_known": true,
+   "dead_share": 0.0031868000561990286,
+   "dead_sampled": 761579,
+   "seed_known": false,
+   "seed_count": null,
+   "has_profile": true
+  },
+  {
+   "id": "pastebin.com",
+   "title": "Pastebin",
+   "blurb": "Public text pastes \u2014 snippets, configs, dumps and leaks \u2014 from the internet's default scratchpad.",
+   "category": "platform",
+   "kind": "web pages",
+   "count": 598757,
+   "share": 7.351982356641138e-05,
+   "indexes": [
+    "text"
+   ],
+   "index_updated": "2023-10-31",
+   "index_age_days": 1035,
+   "api_title": "pastebin.com",
+   "api_description": "Search #count pastebin.com web pages using an index built from anchor text,\r\nall URL parts (file names, hosts, domains), MIME Types, language,\r\nHTTP Status codes and the full text of the web pages.",
+   "search_url": "https://web.archive.org/collection-search/pastebin.com",
+   "item_url": "",
+   "item": null,
+   "years": {
+    "2005": 196,
+    "2006": 802,
+    "2007": 260,
+    "2010": 9123,
+    "2011": 29282,
+    "2012": 75387,
+    "2013": 62589,
+    "2014": 50549,
+    "2015": 70423,
+    "2016": 70236,
+    "2017": 30996,
+    "2018": 5142,
+    "2019": 9482,
+    "2020": 66721,
+    "2021": 48389,
+    "2022": 29770,
+    "2023": 39360
+   },
+   "year_min": "2005",
+   "year_max": "2023",
+   "years_capped": true,
+   "top_domains": [
+    [
+     "pastebin.com",
+     598757
+    ]
+   ],
+   "domain_count_capped": false,
+   "top_languages": [
+    [
+     "en",
+     455758
+    ],
+    [
+     "rw",
+     22799
+    ],
+    [
+     "la",
+     12268
+    ],
+    [
+     "ru",
+     10693
+    ],
+    [
+     "de",
+     8817
+    ],
+    [
+     "es",
+     7618
+    ]
+   ],
+   "language_count_capped": true,
+   "tlds": [
+    [
+     "com",
+     598757
+    ]
+   ],
+   "dead_known": false,
+   "dead_share": null,
+   "dead_sampled": 0,
+   "seed_known": false,
+   "seed_count": null,
+   "has_profile": true
+  },
+  {
+   "id": "zaman.com.tr",
+   "title": "Zaman (Turkey)",
+   "blurb": "Turkey's largest-circulation daily until the state seized it in 2016 and closed it after that year's coup attempt.",
+   "category": "press",
+   "kind": "articles",
+   "count": 529812,
+   "share": 6.50542453171613e-05,
+   "indexes": [
+    "text"
+   ],
+   "index_updated": "2022-10-01",
+   "index_age_days": 1430,
+   "api_title": "zaman.com.tr",
+   "api_description": "Search #count zaman.com.tr news articles using an index built from anchor text,\r\nall URL parts (file names, hosts, domains), MIME Types, HTTP Status\r\ncodes and the full text of the articles.",
+   "search_url": "https://web.archive.org/collection-search/zaman.com.tr",
+   "item_url": "",
+   "item": null,
+   "years": {
+    "1997": 1604,
+    "1998": 1,
+    "1999": 11,
+    "2000": 6,
+    "2002": 1,
+    "2003": 7,
+    "2005": 7,
+    "2006": 4,
+    "2007": 10,
+    "2008": 2,
+    "2009": 1,
+    "2011": 4,
+    "2012": 23857,
+    "2013": 249218,
+    "2014": 89831,
+    "2015": 110629,
+    "2016": 54618
+   },
+   "year_min": "1997",
+   "year_max": "2016",
+   "years_capped": true,
+   "top_domains": [
+    [
+     "zaman.com.tr",
+     529812
+    ]
+   ],
+   "domain_count_capped": false,
+   "top_languages": [
+    [
+     "tr",
+     528706
+    ],
+    [
+     "en",
+     569
+    ],
+    [
+     "ht",
+     242
+    ],
+    [
+     "az",
+     176
+    ],
+    [
+     "fr",
+     33
+    ],
+    [
+     "lv",
+     14
+    ]
+   ],
+   "language_count_capped": true,
+   "tlds": [
+    [
+     "com.tr",
+     529812
+    ]
+   ],
+   "dead_known": false,
+   "dead_share": null,
+   "dead_sampled": 0,
+   "seed_known": false,
+   "seed_count": null,
+   "has_profile": true
+  },
+  {
+   "id": "files.eric.ed.gov",
+   "title": "ERIC Full-Text PDFs",
+   "blurb": "The research reports, papers and dissertations hosted on ERIC's document server, indexed by their full text.",
+   "category": "gov",
+   "kind": "PDF files",
+   "count": 509664,
+   "share": 6.258032450251352e-05,
+   "indexes": [
+    "object",
+    "text"
+   ],
+   "index_updated": "2025-04-05",
+   "index_age_days": 513,
+   "api_title": "files.eric.ed.gov",
+   "api_description": "Search #count https://files.eric.ed.gov/ PDF captures using an index built from anchor text,\nall URL parts (file names, hosts, domains), MIME Types, HTTP Status\ncodes and the full text.",
+   "search_url": "https://web.archive.org/collection-search/files.eric.ed.gov",
+   "item_url": "",
+   "item": null,
+   "years": {
+    "2013": 299,
+    "2014": 833,
+    "2015": 341437,
+    "2016": 4425,
+    "2017": 23866,
+    "2018": 24222,
+    "2019": 2043,
+    "2020": 11902,
+    "2021": 25032,
+    "2022": 5576,
+    "2023": 5576,
+    "2024": 60200,
+    "2025": 4253
+   },
+   "year_min": "2013",
+   "year_max": "2025",
+   "years_capped": false,
+   "top_domains": [
+    [
+     "ed.gov",
+     509664
+    ]
+   ],
+   "domain_count_capped": false,
+   "top_languages": [],
+   "language_count_capped": false,
+   "tlds": [
+    [
+     "gov",
+     509664
+    ]
+   ],
+   "dead_known": false,
+   "dead_share": null,
+   "dead_sampled": 0,
+   "seed_known": false,
+   "seed_count": null,
+   "has_profile": true
+  },
+  {
+   "id": "time.com",
+   "title": "TIME",
+   "blurb": "The American newsweekly's website, spanning several redesigns and changes of ownership.",
+   "category": "news",
+   "kind": "web pages",
+   "count": 480594,
+   "share": 5.901089438131982e-05,
+   "indexes": [
+    "text"
+   ],
+   "index_updated": "2023-02-01",
+   "index_age_days": 1307,
+   "api_title": "time.com",
+   "api_description": "Search #count web pages using an index built from anchor text,\r\nall URL parts (file names, hosts, domains), MIME Types, language,\r\nHTTP Status codes and the full text of the web pages.",
+   "search_url": "https://web.archive.org/collection-search/time.com",
+   "item_url": "",
+   "item": null,
+   "years": {
+    "2008": 3,
+    "2009": 4,
+    "2014": 50897,
+    "2015": 69521,
+    "2016": 99247,
+    "2017": 4523,
+    "2018": 814,
+    "2019": 2846,
+    "2020": 4308,
+    "2021": 2557,
+    "2022": 233306,
+    "2023": 12568
+   },
+   "year_min": "2008",
+   "year_max": "2023",
+   "years_capped": false,
+   "top_domains": [
+    [
+     "time.com",
+     480594
+    ]
+   ],
+   "domain_count_capped": false,
+   "top_languages": [
+    [
+     "en",
+     480532
+    ],
+    [
+     "la",
+     21
+    ],
+    [
+     "pt",
+     14
+    ],
+    [
+     "uk",
+     10
+    ],
+    [
+     "ru",
+     4
+    ],
+    [
+     "zh",
+     4
+    ]
+   ],
+   "language_count_capped": false,
+   "tlds": [
+    [
+     "com",
+     480594
+    ]
+   ],
+   "dead_known": false,
+   "dead_share": null,
+   "dead_sampled": 0,
+   "seed_known": false,
+   "seed_count": null,
+   "has_profile": true
+  },
+  {
+   "id": "mtv.com",
+   "title": "MTV News",
+   "blurb": "Two decades of MTV News reporting, deleted from the live web in 2024 when Paramount pulled the archive down.",
+   "category": "news",
+   "kind": "web pages",
+   "count": 479020,
+   "share": 5.881762699188883e-05,
+   "indexes": [
+    "text"
+   ],
+   "index_updated": "2024-06-27",
+   "index_age_days": 795,
+   "api_title": "mtv.com/news",
+   "api_description": "Search #count mtv.com/news web pages using an index built from anchor text,\r\nall URL parts (file names, hosts, domains), MIME Types, language,\r\nHTTP Status codes and the full text of the web pages.",
+   "search_url": "https://web.archive.org/collection-search/mtv.com",
+   "item_url": "",
+   "item": null,
+   "years": {
+    "2001": 32936,
+    "2002": 23058,
+    "2003": 29855,
+    "2004": 30323,
+    "2005": 28419,
+    "2012": 16176,
+    "2013": 9490,
+    "2014": 38091,
+    "2015": 37644,
+    "2016": 34825,
+    "2017": 30284,
+    "2018": 17282,
+    "2019": 16669,
+    "2020": 34349,
+    "2021": 32342,
+    "2022": 36356,
+    "2023": 9864
+   },
+   "year_min": "2001",
+   "year_max": "2023",
+   "years_capped": true,
+   "top_domains": [
+    [
+     "mtv.com",
+     479020
+    ]
+   ],
+   "domain_count_capped": false,
+   "top_languages": [
+    [
+     "en",
+     478941
+    ],
+    [
+     "es",
+     33
+    ],
+    [
+     "la",
+     13
+    ],
+    [
+     "de",
+     5
+    ],
+    [
+     "sw",
+     4
+    ],
+    [
+     "af",
+     3
+    ]
+   ],
+   "language_count_capped": true,
+   "tlds": [
+    [
+     "com",
+     479020
+    ]
+   ],
+   "dead_known": false,
+   "dead_share": null,
+   "dead_sampled": 0,
+   "seed_known": false,
+   "seed_count": null,
+   "has_profile": true
+  },
+  {
+   "id": "elperiodico.com.gt",
+   "title": "elPeri\u00f3dico (Guatemala)",
+   "blurb": "The investigative Guatemalan daily that closed in 2023 after its publisher was jailed and its finances frozen.",
+   "category": "press",
+   "kind": "web pages",
+   "count": 380010,
+   "share": 4.666044514464464e-05,
+   "indexes": [
+    "text"
+   ],
+   "index_updated": "2026-02-14",
+   "index_age_days": 198,
+   "api_title": "elperiodico.com.gt",
+   "api_description": "Search #count elperiodico.com.gt web pages using an index built from anchor text,\nall URL parts (file names, hosts, domains), MIME Types, HTTP Status\ncodes and the full text of the pages",
+   "search_url": "https://web.archive.org/collection-search/elperiodico.com.gt",
+   "item_url": "",
+   "item": null,
+   "years": {
+    "2004": 2192,
+    "2005": 12396,
+    "2007": 6041,
+    "2008": 1883,
+    "2011": 11303,
+    "2012": 15933,
+    "2013": 13335,
+    "2014": 8240,
+    "2015": 21327,
+    "2016": 23386,
+    "2017": 11976,
+    "2018": 10414,
+    "2019": 25162,
+    "2020": 56316,
+    "2021": 79268,
+    "2022": 67493,
+    "2023": 11055
+   },
+   "year_min": "2004",
+   "year_max": "2023",
+   "years_capped": true,
+   "top_domains": [
+    [
+     "elperiodico.com.gt",
+     380010
+    ]
+   ],
+   "domain_count_capped": false,
+   "top_languages": [
+    [
+     "es",
+     377947
+    ],
+    [
+     "en",
+     142
+    ],
+    [
+     "an",
+     34
+    ],
+    [
+     "pt",
+     22
+    ],
+    [
+     "ky",
+     13
+    ],
+    [
+     "gl",
+     6
+    ]
+   ],
+   "language_count_capped": true,
+   "tlds": [
+    [
+     "com.gt",
+     380010
+    ]
+   ],
+   "dead_known": false,
+   "dead_share": null,
+   "dead_sampled": 0,
+   "seed_known": false,
+   "seed_count": null,
+   "has_profile": true
+  },
+  {
+   "id": "dcist.com",
+   "title": "DCist",
+   "blurb": "Washington, D.C. local news site \u2014 shut down once in 2017 and again in 2024, after WAMU closed it.",
+   "category": "news",
+   "kind": "web pages",
+   "count": 271861,
+   "share": 3.338110912204478e-05,
+   "indexes": [
+    "text"
+   ],
+   "index_updated": "2024-03-09",
+   "index_age_days": 905,
+   "api_title": "dcist.com",
+   "api_description": "Search #count dcist.com web pages using an index built from anchor text,\r\nall URL parts (file names, hosts, domains), MIME Types, language,\r\nHTTP Status codes and the full text of the web pages.",
+   "search_url": "https://web.archive.org/collection-search/dcist.com",
+   "item_url": "",
+   "item": null,
+   "years": {
+    "2006": 3843,
+    "2007": 3561,
+    "2008": 8724,
+    "2009": 8672,
+    "2010": 6505,
+    "2012": 227,
+    "2013": 3490,
+    "2014": 3959,
+    "2015": 4094,
+    "2016": 3808,
+    "2017": 99135,
+    "2018": 1232,
+    "2020": 5754,
+    "2021": 6080,
+    "2022": 8609,
+    "2023": 3946,
+    "2024": 100109
+   },
+   "year_min": "2006",
+   "year_max": "2024",
+   "years_capped": true,
+   "top_domains": [
+    [
+     "dcist.com",
+     271861
+    ]
+   ],
+   "domain_count_capped": false,
+   "top_languages": [
+    [
+     "en",
+     271849
+    ],
+    [
+     "fr",
+     8
+    ],
+    [
+     "cy",
+     2
+    ],
+    [
+     "de",
+     1
+    ],
+    [
+     "fo",
+     1
+    ]
+   ],
+   "language_count_capped": false,
+   "tlds": [
+    [
+     "com",
+     271861
+    ]
+   ],
+   "dead_known": false,
+   "dead_share": null,
+   "dead_sampled": 0,
+   "seed_known": false,
+   "seed_count": null,
+   "has_profile": true
+  },
+  {
+   "id": "thestandnews.com",
+   "title": "Stand News",
+   "blurb": "The Hong Kong news site raided and closed in December 2021, whose editors were later convicted of sedition.",
+   "category": "press",
+   "kind": "web pages",
+   "count": 248000,
+   "share": 3.0451278639698615e-05,
+   "indexes": [
+    "text"
+   ],
+   "index_updated": "2022-07-01",
+   "index_age_days": 1522,
+   "api_title": "thestandnews.com",
+   "api_description": "Search #count thestandnews.com web pages using an index built from anchor text,\r\nall URL parts (file names, hosts, domains), MIME Types, HTTP Status\r\ncodes and the full text of the web pages.",
+   "search_url": "https://web.archive.org/collection-search/thestandnews.com",
+   "item_url": "",
+   "item": null,
+   "years": {
+    "2015": 9339,
+    "2016": 23888,
+    "2017": 17993,
+    "2018": 21164,
+    "2019": 49461,
+    "2020": 42909,
+    "2021": 83245,
+    "2022": 1
+   },
+   "year_min": "2015",
+   "year_max": "2022",
+   "years_capped": false,
+   "top_domains": [
+    [
+     "thestandnews.com",
+     248000
+    ]
+   ],
+   "domain_count_capped": false,
+   "top_languages": [
+    [
+     "zh",
+     246437
+    ],
+    [
+     "en",
+     1339
+    ],
+    [
+     "la",
+     117
+    ],
+    [
+     "ja",
+     92
+    ],
+    [
+     "lb",
+     6
+    ],
+    [
+     "ar",
+     2
+    ]
+   ],
+   "language_count_capped": false,
+   "tlds": [
+    [
+     "com",
+     248000
+    ]
+   ],
+   "dead_known": false,
+   "dead_share": null,
+   "dead_sampled": 0,
+   "seed_known": false,
+   "seed_count": null,
+   "has_profile": true
+  },
+  {
+   "id": "themessenger.com",
+   "title": "The Messenger",
+   "blurb": "The heavily-funded U.S. news startup that launched in May 2023 and collapsed in January 2024, taking its site down with it.",
+   "category": "news",
+   "kind": "web pages",
+   "count": 211022,
+   "share": 2.5910845649622906e-05,
+   "indexes": [
+    "text"
+   ],
+   "index_updated": "2024-03-11",
+   "index_age_days": 903,
+   "api_title": "themessenger.com",
+   "api_description": "Search #count themessenger.com web pages using an index built from anchor text,\r\nall URL parts (file names, hosts, domains), MIME Types, language,\r\nHTTP Status codes and the full text of the web pages.",
+   "search_url": "https://web.archive.org/collection-search/themessenger.com",
+   "item_url": "",
+   "item": null,
+   "years": {
+    "2023": 164397,
+    "2024": 46625
+   },
+   "year_min": "2023",
+   "year_max": "2024",
+   "years_capped": false,
+   "top_domains": [
+    [
+     "themessenger.com",
+     211022
+    ]
+   ],
+   "domain_count_capped": false,
+   "top_languages": [
+    [
+     "en",
+     211022
+    ]
+   ],
+   "language_count_capped": false,
+   "tlds": [
+    [
+     "com",
+     211022
+    ]
+   ],
+   "dead_known": false,
+   "dead_share": null,
+   "dead_sampled": 0,
+   "seed_known": false,
+   "seed_count": null,
+   "has_profile": true
+  },
+  {
+   "id": "poetry.com",
+   "title": "Poetry.com",
+   "blurb": "The community poetry site's user-submitted archive, from the era when anyone could publish a poem and be told it had won something.",
+   "category": "platform",
+   "kind": "web pages",
+   "count": 179000,
+   "share": 2.1978947082685692e-05,
+   "indexes": [
+    "text"
+   ],
+   "index_updated": "2022-07-01",
+   "index_age_days": 1522,
+   "api_title": "poetry.com",
+   "api_description": "Search #count poetry.com web pages using an index built from anchor text,\r\nall URL parts (file names, hosts, domains), MIME Types, HTTP Status\r\ncodes and the full text of the web pages.",
+   "search_url": "https://web.archive.org/collection-search/poetry.com",
+   "item_url": "",
+   "item": null,
+   "years": {
+    "2000": 1086,
+    "2001": 1484,
+    "2002": 3425,
+    "2004": 318,
+    "2006": 1173,
+    "2008": 3151,
+    "2009": 16211,
+    "2010": 17990,
+    "2011": 34892,
+    "2012": 8634,
+    "2013": 15570,
+    "2014": 9364,
+    "2015": 6916,
+    "2016": 7941,
+    "2017": 6574,
+    "2021": 42658,
+    "2022": 997
+   },
+   "year_min": "2000",
+   "year_max": "2022",
+   "years_capped": true,
+   "top_domains": [
+    [
+     "poetry.com",
+     179000
+    ]
+   ],
+   "domain_count_capped": false,
+   "top_languages": [
+    [
+     "en",
+     175266
+    ],
+    [
+     "fr",
+     1774
+    ],
+    [
+     "la",
+     501
+    ],
+    [
+     "da",
+     208
+    ],
+    [
+     "wa",
+     189
+    ],
+    [
+     "no",
+     111
+    ]
+   ],
+   "language_count_capped": true,
+   "tlds": [
+    [
+     "com",
+     179000
+    ]
+   ],
+   "dead_known": false,
+   "dead_share": null,
+   "dead_sampled": 0,
+   "seed_known": false,
+   "seed_count": null,
+   "has_profile": true
+  },
+  {
+   "id": "cmt.com",
+   "title": "CMT News",
+   "blurb": "Country Music Television's news site, taken offline in the same 2024 purge that removed MTV News.",
+   "category": "news",
+   "kind": "web pages",
+   "count": 73557,
+   "share": 9.031873802017383e-06,
+   "indexes": [
+    "text"
+   ],
+   "index_updated": "2024-07-04",
+   "index_age_days": 788,
+   "api_title": "cmt.com",
+   "api_description": " Search #count cmt.com/news web pages using an index built from anchor text,\r\nall URL parts (file names, hosts, domains), MIME Types, language,\r\nHTTP Status codes and the full text of the web pages.",
+   "search_url": "https://web.archive.org/collection-search/cmt.com",
+   "item_url": "",
+   "item": null,
+   "years": {
+    "2004": 12128,
+    "2005": 3054,
+    "2007": 1780,
+    "2010": 1438,
+    "2011": 3401,
+    "2012": 3334,
+    "2013": 3184,
+    "2014": 4325,
+    "2015": 3682,
+    "2016": 2497,
+    "2017": 2547,
+    "2018": 1683,
+    "2019": 1496,
+    "2020": 7538,
+    "2021": 8425,
+    "2022": 8562,
+    "2023": 2503
+   },
+   "year_min": "2004",
+   "year_max": "2023",
+   "years_capped": true,
+   "top_domains": [
+    [
+     "cmt.com",
+     73557
+    ]
+   ],
+   "domain_count_capped": false,
+   "top_languages": [
+    [
+     "en",
+     73473
+    ],
+    [
+     "mg",
+     64
+    ],
+    [
+     "de",
+     6
+    ],
+    [
+     "fr",
+     6
+    ],
+    [
+     "af",
+     2
+    ],
+    [
+     "cy",
+     2
+    ]
+   ],
+   "language_count_capped": false,
+   "tlds": [
+    [
+     "com",
+     73557
+    ]
+   ],
+   "dead_known": false,
+   "dead_share": null,
+   "dead_sampled": 0,
+   "seed_known": false,
+   "seed_count": null,
+   "has_profile": true
+  },
+  {
+   "id": "cia-world-factbook",
+   "title": "CIA World Factbook",
+   "blurb": "Country profiles \u2014 geography, demographics, economy, military \u2014 published by the U.S. Central Intelligence Agency.",
+   "category": "gov",
+   "kind": "web pages",
+   "count": 18004,
+   "share": 2.2106645993110236e-06,
+   "indexes": [
+    "text"
+   ],
+   "index_updated": "2026-02-06",
+   "index_age_days": 206,
+   "api_title": "CIA World Factbook",
+   "api_description": "Search #count web pages using an index built from anchor text, all URL parts (file names, hosts, domains), MIME Types, language, HTTP Status codes and the full text of the web pages.",
+   "search_url": "https://web.archive.org/collection-search/cia-world-factbook",
+   "item_url": "",
+   "item": null,
+   "years": {
+    "2021": 6980,
+    "2022": 1696,
+    "2023": 934,
+    "2024": 2333,
+    "2025": 6055,
+    "2026": 6
+   },
+   "year_min": "2021",
+   "year_max": "2026",
+   "years_capped": false,
+   "top_domains": [
+    [
+     "cia.gov",
+     18004
+    ]
+   ],
+   "domain_count_capped": false,
+   "top_languages": [
+    [
+     "en",
+     12710
+    ],
+    [
+     "eo",
+     401
+    ],
+    [
+     "la",
+     84
+    ],
+    [
+     "ca",
+     9
+    ],
+    [
+     "qu",
+     3
+    ],
+    [
+     "rw",
+     3
+    ]
+   ],
+   "language_count_capped": false,
+   "tlds": [
+    [
+     "gov",
+     18004
+    ]
+   ],
+   "dead_known": false,
+   "dead_share": null,
+   "dead_sampled": 0,
+   "seed_known": false,
+   "seed_count": null,
+   "has_profile": true
+  },
+  {
+   "id": "exiledonline.com",
+   "title": "The eXile",
+   "blurb": "The Moscow-based English-language paper shut down in 2008 after a government inspection \u2014 an early case of the pattern this shelf documents.",
+   "category": "press",
+   "kind": "web pages",
+   "count": 13910,
+   "share": 1.7079729269282569e-06,
+   "indexes": [
+    "text"
+   ],
+   "index_updated": "2022-12-15",
+   "index_age_days": 1355,
+   "api_title": "exiledonline.com",
+   "api_description": " Search #count web pages using an index built from anchor text,\r\nall URL parts (file names, hosts, domains), MIME Types, language,\r\nHTTP Status codes and the full text of the web pages.",
+   "search_url": "https://web.archive.org/collection-search/exiledonline.com",
+   "item_url": "",
+   "item": null,
+   "years": {
+    "2008": 462,
+    "2009": 1650,
+    "2010": 1861,
+    "2011": 1400,
+    "2012": 1159,
+    "2013": 921,
+    "2014": 5928,
+    "2015": 57,
+    "2016": 25,
+    "2017": 159,
+    "2018": 35,
+    "2019": 22,
+    "2020": 75,
+    "2021": 108,
+    "2022": 48
+   },
+   "year_min": "2008",
+   "year_max": "2022",
+   "years_capped": false,
+   "top_domains": [
+    [
+     "exiledonline.com",
+     13910
+    ]
+   ],
+   "domain_count_capped": false,
+   "top_languages": [
+    [
+     "en",
+     13910
+    ]
+   ],
+   "language_count_capped": false,
+   "tlds": [
+    [
+     "com",
+     13910
+    ]
+   ],
+   "dead_known": false,
+   "dead_share": null,
+   "dead_sampled": 0,
+   "seed_known": false,
+   "seed_count": null,
+   "has_profile": true
+  },
+  {
+   "id": "tammybruce.com",
+   "title": "Tammy Bruce",
+   "blurb": "The conservative commentator's personal site and blog, kept as a small, complete single-author archive.",
+   "category": "platform",
+   "kind": "web pages",
+   "count": 13107,
+   "share": 1.6093746335908457e-06,
+   "indexes": [
+    "text"
+   ],
+   "index_updated": "2025-01-24",
+   "index_age_days": 584,
+   "api_title": "tammybruce.com",
+   "api_description": "Search #count tammybruce.com web pages using an index built from anchor text,\r\nall URL parts (file names, hosts, domains), MIME Types, language,\r\nHTTP Status codes and the full text of the web pages.",
+   "search_url": "https://web.archive.org/collection-search/tammybruce.com",
+   "item_url": "",
+   "item": null,
+   "years": {
+    "2005": 138,
+    "2006": 2117,
+    "2007": 573,
+    "2008": 872,
+    "2009": 377,
+    "2010": 1062,
+    "2011": 1017,
+    "2012": 1073,
+    "2013": 905,
+    "2014": 831,
+    "2015": 1189,
+    "2016": 1709,
+    "2017": 580,
+    "2018": 374,
+    "2019": 48,
+    "2020": 67,
+    "2021": 119
+   },
+   "year_min": "2005",
+   "year_max": "2021",
+   "years_capped": true,
+   "top_domains": [
+    [
+     "tammybruce.com",
+     13107
+    ]
+   ],
+   "domain_count_capped": false,
+   "top_languages": [
+    [
+     "en",
+     13093
+    ],
+    [
+     "la",
+     11
+    ],
+    [
+     "cy",
+     1
+    ],
+    [
+     "he",
+     1
+    ],
+    [
+     "tl",
+     1
+    ]
+   ],
+   "language_count_capped": false,
+   "tlds": [
+    [
+     "com",
+     13107
+    ]
+   ],
+   "dead_known": false,
+   "dead_share": null,
+   "dead_sampled": 0,
+   "seed_known": false,
+   "seed_count": null,
+   "has_profile": true
+  }
+ ],
+ "categories": {
+  "gov": {
+   "label": "U.S. Government",
+   "blurb": "Federal, state and local government material, including the End of Term transition crawls."
+  },
+  "press": {
+   "label": "Press Freedom",
+   "blurb": "Independent and exile newsrooms archived because they were shut down, blocked or seized."
+  },
+  "news": {
+   "label": "News & Journalism",
+   "blurb": "News corpora and the websites of outlets that have gone dark or shrunk."
+  },
+  "platform": {
+   "label": "Platforms & Accounts",
+   "blurb": "User-generated platforms and individual accounts captured as they closed or changed hands."
+  },
+  "format": {
+   "label": "Document Formats",
+   "blurb": "Web-wide indexes of a single file format, searchable by the text inside the documents."
+  },
+  "topic": {
+   "label": "Topics & Events",
+   "blurb": "Subject collections built around one event, organisation or country."
+  }
+ },
+ "category_order": [
+  "gov",
+  "press",
+  "news",
+  "platform",
+  "format",
+  "topic"
+ ],
+ "totals": {
+  "collections": 49,
+  "documents": 8144157194,
+  "with_profile": 47,
+  "global_indexes": {
+   "wayback": {
+    "text": 2648979000,
+    "image": 2561030000,
+    "object": 1008489893
+   },
+   "wayback-anchor-search": {
+    "all": 468418035
+   }
+  }
+ },
+ "unlisted": [
+  {
+   "id": "nrc.gov",
+   "count": 1780257,
+   "note": "U.S. Nuclear Regulatory Commission"
+  },
+  {
+   "id": "january6th.house.gov",
+   "count": 666,
+   "note": "House Jan. 6 Select Committee"
+  }
+ ]
+}

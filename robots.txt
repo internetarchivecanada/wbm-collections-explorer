@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://internetarchivecanada.github.io/wbm-collections-explorer/sitemap.xml

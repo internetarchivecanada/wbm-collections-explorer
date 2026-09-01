@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>elPeriódico (Guatemala) — Wayback Collection Search</title>
+<meta name="description" content="A tile-based explorer for every collection in the Wayback Machine's Collection Search.">
+<link rel="stylesheet" href="/wbm-collections-explorer/static/app.css?v=1.1.0">
+<script>
+  // set the theme before first paint so there is no flash
+  try {
+    var t = localStorage.getItem('wce-theme');
+    if (t) document.documentElement.setAttribute('data-theme', t);
+  } catch (e) {}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+
+<header class="site-head detail-head">
+  <div class="wrap">
+    <p class="crumb"><a href="/wbm-collections-explorer/">← All 49 collections</a></p>
+    <div class="head-top">
+      <div>
+        <p class="eyebrow">Press Freedom</p>
+        <h1>elPeriódico (Guatemala)</h1>
+        <p class="lede">The investigative Guatemalan daily that closed in 2023 after its publisher was jailed and its finances frozen.</p>
+      </div>
+      <button id="theme" class="ghost" type="button" aria-label="Switch colour theme">Theme</button>
+    </div>
+
+    <form class="detail-search" data-collection="elperiodico.com.gt">
+      <input type="search" name="q" placeholder="Search 380,010 web pages…"
+             aria-label="Search inside elPeriódico (Guatemala)" autocomplete="off" autofocus>
+      <button type="submit">Search in Wayback Machine</button>
+    </form>
+  </div>
+</header>
+
+<main id="main">
+<div class="wrap detail-body">
+
+  <div class="stat-tiles">
+    <div class="stat-tile">
+      <span class="stat-value">380,010</span>
+      <span class="stat-label">web pages in the index</span>
+      <span class="stat-sub">380.0 thousand · 0.00% of all Collection Search content</span>
+    </div>
+    <div class="stat-tile">
+      <span class="stat-value">2026-02-14</span>
+      <span class="stat-label">index last rebuilt</span>
+      <span class="stat-sub fresh fresh-aging"><span class="dot" aria-hidden="true"></span>Aging · rebuilt 7 months ago</span>
+    </div>
+    <div class="stat-tile">
+      <span class="stat-value">2004–2023</span>
+      <span class="stat-label">years the captures come from</span>
+      <span class="stat-sub">17 years represented (17 busiest shown)</span>
+    </div>
+    <div class="stat-tile">
+      <span class="stat-value">—</span>
+      <span class="stat-label">of these URLs are dead on the live web</span>
+      <span class="stat-sub">liveness not measured for this collection</span>
+    </div>
+  </div>
+
+  
+  <section class="panel">
+    <h2>Captures by year</h2>
+    <p class="panel-note">When the material in this collection was captured — not when it was published.
+      The Wayback aggregation returns only the 17 busiest years, so sparse years may be missing.</p>
+    
+    <div class="bars" id="yearbars">
+      
+      <div class="bar-col" data-year="2004" data-n="2,192" data-unit="web pages" tabindex="0">
+        <div class="bar-track"><div class="bar-fill" style="height: 2.8%"></div></div>
+        <span class="bar-x">2004</span>
+      </div>
+      
+      <div class="bar-col" data-year="2005" data-n="12,396" data-unit="web pages" tabindex="0">
+        <div class="bar-track"><div class="bar-fill" style="height: 15.6%"></div></div>
+        <span class="bar-x">2005</span>
+      </div>
+      
+      <div class="bar-col" data-year="2007" data-n="6,041" data-unit="web pages" tabindex="0">
+        <div class="bar-track"><div class="bar-fill" style="height: 7.6%"></div></div>
+        <span class="bar-x">2007</span>
+      </div>
+      
+      <div class="bar-col" data-year="2008" data-n="1,883" data-unit="web pages" tabindex="0">
+        <div class="bar-track"><div class="bar-fill" style="height: 2.4%"></div></div>
+        <span class="bar-x">2008</span>
+      </div>
+      
+      <div class="bar-col" data-year="2011" data-n="11,303" data-unit="web pages" tabindex="0">
+        <div class="bar-track"><div class="bar-fill" style="height: 14.3%"></div></div>
+        <span class="bar-x">2011</span>
+      </div>
+      
+      <div class="bar-col" data-year="2012" data-n="15,933" data-unit="web pages" tabindex="0">
+        <div class="bar-track"><div class="bar-fill" style="height: 20.1%"></div></div>
+        <span class="bar-x">2012</span>
+      </div>
+      
+      <div class="bar-col" data-year="2013" data-n="13,335" data-unit="web pages" tabindex="0">
+        <div class="bar-track"><div class="bar-fill" style="height: 16.8%"></div></div>
+        <span class="bar-x">2013</span>
+      </div>
+      
+      <div class="bar-col" data-year="2014" data-n="8,240" data-unit="web pages" tabindex="0">
+        <div class="bar-track"><div class="bar-fill" style="height: 10.4%"></div></div>
+        <span class="bar-x">2014</span>
+      </div>
+      
+      <div class="bar-col" data-year="2015" data-n="21,327" data-unit="web pages" tabindex="0">
+        <div class="bar-track"><div class="bar-fill" style="height: 26.9%"></div></div>
+        <span class="bar-x">2015</span>
+      </div>
+      
+      <div class="bar-col" data-year="2016" data-n="23,386" data-unit="web pages" tabindex="0">
+        <div class="bar-track"><div class="bar-fill" style="height: 29.5%"></div></div>
+        <span class="bar-x">2016</span>
+      </div>
+      
+      <div class="bar-col" data-year="2017" data-n="11,976" data-unit="web pages" tabindex="0">
+        <div class="bar-track"><div class="bar-fill" style="height: 15.1%"></div></div>
+        <span class="bar-x">2017</span>
+      </div>
+      
+      <div class="bar-col" data-year="2018" data-n="10,414" data-unit="web pages" tabindex="0">
+        <div class="bar-track"><div class="bar-fill" style="height: 13.1%"></div></div>
+        <span class="bar-x">2018</span>
+      </div>
+      
+      <div class="bar-col" data-year="2019" data-n="25,162" data-unit="web pages" tabindex="0">
+        <div class="bar-track"><div class="bar-fill" style="height: 31.7%"></div></div>
+        <span class="bar-x">2019</span>
+      </div>
+      
+      <div class="bar-col" data-year="2020" data-n="56,316" data-unit="web pages" tabindex="0">
+        <div class="bar-track"><div class="bar-fill" style="height: 71.0%"></div></div>
+        <span class="bar-x">2020</span>
+      </div>
+      
+      <div class="bar-col" data-year="2021" data-n="79,268" data-unit="web pages" tabindex="0">
+        <div class="bar-track"><div class="bar-fill" style="height: 100.0%"></div></div>
+        <span class="bar-x">2021</span>
+      </div>
+      
+      <div class="bar-col" data-year="2022" data-n="67,493" data-unit="web pages" tabindex="0">
+        <div class="bar-track"><div class="bar-fill" style="height: 85.1%"></div></div>
+        <span class="bar-x">2022</span>
+      </div>
+      
+      <div class="bar-col" data-year="2023" data-n="11,055" data-unit="web pages" tabindex="0">
+        <div class="bar-track"><div class="bar-fill" style="height: 13.9%"></div></div>
+        <span class="bar-x">2023</span>
+      </div>
+      
+    </div>
+    <div class="tip" id="tip" hidden></div>
+    <details class="table-fold">
+      <summary>View as a table</summary>
+      <table class="mini">
+        <thead><tr><th scope="col">Year</th><th scope="col" class="num">Web pages</th></tr></thead>
+        <tbody>
+        <tr><th scope="row">2004</th><td class="num">2,192</td></tr><tr><th scope="row">2005</th><td class="num">12,396</td></tr><tr><th scope="row">2007</th><td class="num">6,041</td></tr><tr><th scope="row">2008</th><td class="num">1,883</td></tr><tr><th scope="row">2011</th><td class="num">11,303</td></tr><tr><th scope="row">2012</th><td class="num">15,933</td></tr><tr><th scope="row">2013</th><td class="num">13,335</td></tr><tr><th scope="row">2014</th><td class="num">8,240</td></tr><tr><th scope="row">2015</th><td class="num">21,327</td></tr><tr><th scope="row">2016</th><td class="num">23,386</td></tr><tr><th scope="row">2017</th><td class="num">11,976</td></tr><tr><th scope="row">2018</th><td class="num">10,414</td></tr><tr><th scope="row">2019</th><td class="num">25,162</td></tr><tr><th scope="row">2020</th><td class="num">56,316</td></tr><tr><th scope="row">2021</th><td class="num">79,268</td></tr><tr><th scope="row">2022</th><td class="num">67,493</td></tr><tr><th scope="row">2023</th><td class="num">11,055</td></tr>
+        </tbody>
+      </table>
+    </details>
+  </section>
+  
+
+  <div class="two-col">
+    
+    <section class="panel">
+      <h2>Top hosts</h2>
+      <p class="panel-note">All hosts in the index.</p>
+      
+      <ul class="ranked">
+        
+        <li>
+          <span class="ranked-label"><a href="https://web.archive.org/web/*/elperiodico.com.gt*" rel="noopener">elperiodico.com.gt</a></span>
+          <span class="ranked-bar"><span style="width: 100.0%"></span></span>
+          <span class="ranked-n">380,010</span>
+        </li>
+        
+      </ul>
+    </section>
+    
+
+    
+    <section class="panel">
+      <h2>Languages</h2>
+      <p class="panel-note">Detected language of the indexed text, 17 most common.</p>
+      
+      <ul class="ranked">
+        
+        <li>
+          <span class="ranked-label">Spanish <span class="cid">es</span></span>
+          <span class="ranked-bar"><span style="width: 100.0%"></span></span>
+          <span class="ranked-n">377,947</span>
+        </li>
+        
+        <li>
+          <span class="ranked-label">English <span class="cid">en</span></span>
+          <span class="ranked-bar"><span style="width: 0.0%"></span></span>
+          <span class="ranked-n">142</span>
+        </li>
+        
+        <li>
+          <span class="ranked-label">an <span class="cid">an</span></span>
+          <span class="ranked-bar"><span style="width: 0.0%"></span></span>
+          <span class="ranked-n">34</span>
+        </li>
+        
+        <li>
+          <span class="ranked-label">Portuguese <span class="cid">pt</span></span>
+          <span class="ranked-bar"><span style="width: 0.0%"></span></span>
+          <span class="ranked-n">22</span>
+        </li>
+        
+        <li>
+          <span class="ranked-label">Kyrgyz <span class="cid">ky</span></span>
+          <span class="ranked-bar"><span style="width: 0.0%"></span></span>
+          <span class="ranked-n">13</span>
+        </li>
+        
+        <li>
+          <span class="ranked-label">Galician <span class="cid">gl</span></span>
+          <span class="ranked-bar"><span style="width: 0.0%"></span></span>
+          <span class="ranked-n">6</span>
+        </li>
+        
+      </ul>
+    </section>
+    
+  </div>
+
+  <section class="panel">
+    <h2>Provenance</h2>
+    <dl class="kv">
+      <div><dt>Collection id</dt><dd><code>elperiodico.com.gt</code></dd></div>
+      <div><dt>Title in the Wayback drop-down</dt><dd>elperiodico.com.gt</dd></div>
+      <div><dt>Index types</dt><dd>text</dd></div>
+      <div><dt>Top-level domains</dt>
+        <dd><code>.com.gt</code> 380,010</dd></div>
+      
+      
+      <div><dt>How the index is built</dt><dd class="apidesc">Search 380,010 elperiodico.com.gt web pages using an index built from anchor text,
+all URL parts (file names, hosts, domains), MIME Types, HTTP Status
+codes and the full text of the pages</dd></div>
+    </dl>
+    <p class="tile-links">
+      <a href="https://web.archive.org/collection-search/elperiodico.com.gt" rel="noopener">Open in Wayback Machine</a>
+      
+      <a href="/wbm-collections-explorer/api/collections.json">Full dataset (JSON)</a>
+    </p>
+  </section>
+
+  <section class="panel siblings">
+    <h2>Other Press Freedom collections</h2>
+    <ul class="sib-list">
+      
+      <li><a href="/wbm-collections-explorer/c/russian-independent-media/">Russian Independent Media</a>
+        <span class="cid">65,954,368 articles</span></li>
+      
+      <li><a href="/wbm-collections-explorer/c/independent-media-afghanistan/">Independent Media Afghanistan</a>
+        <span class="cid">10,854,210 articles</span></li>
+      
+      <li><a href="/wbm-collections-explorer/c/independent-media-belarus/">Independent Media Belarus</a>
+        <span class="cid">9,400,646 articles</span></li>
+      
+      <li><a href="/wbm-collections-explorer/c/independent-media-central-america/">Exile Media Central America</a>
+        <span class="cid">7,381,530 articles</span></li>
+      
+      <li><a href="/wbm-collections-explorer/c/HongKong/">Hong Kong Shuttered Newsrooms</a>
+        <span class="cid">3,517,790 web pages</span></li>
+      
+      <li><a href="/wbm-collections-explorer/c/hk.appledaily.com/">Apple Daily Hong Kong</a>
+        <span class="cid">3,268,655 web pages</span></li>
+      
+      <li><a href="/wbm-collections-explorer/c/hkcnews.com/">Citizen News Hong Kong</a>
+        <span class="cid">1,899,066 web pages</span></li>
+      
+      <li><a href="/wbm-collections-explorer/c/zaman.com.tr/">Zaman (Turkey)</a>
+        <span class="cid">529,812 articles</span></li>
+      
+      <li><a href="/wbm-collections-explorer/c/thestandnews.com/">Stand News</a>
+        <span class="cid">248,000 web pages</span></li>
+      
+      <li><a href="/wbm-collections-explorer/c/exiledonline.com/">The eXile</a>
+        <span class="cid">13,910 web pages</span></li>
+      
+    </ul>
+  </section>
+
+</div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p>
+      Data harvested from the public Wayback Machine endpoints
+      <code>/__wb/search/collectioninfo</code> and <code>/__wb/search/waybacksearch</code>,
+      plus <code>archive.org/metadata</code>. Snapshot taken
+      <time datetime="2026-08-31T17:13:01+00:00">2026-08-31 17:13 UTC</time>.
+    </p>
+    <p>
+      Every collection here is searchable at
+      <a href="https://web.archive.org/collection-search/">web.archive.org/collection-search/</a>.
+      Explorer v1.1.0 · <a href="/wbm-collections-explorer/api/collections.json">JSON API</a>
+    </p>
+  </div>
+</footer>
+<script src="/wbm-collections-explorer/static/app.js?v=1.1.0"></script>
+</body>
+</html>

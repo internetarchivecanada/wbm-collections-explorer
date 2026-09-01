@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>End of Term 2024 — Wayback Collection Search</title>
+<meta name="description" content="A tile-based explorer for every collection in the Wayback Machine's Collection Search.">
+<link rel="stylesheet" href="/wbm-collections-explorer/static/app.css?v=1.1.0">
+<script>
+  // set the theme before first paint so there is no flash
+  try {
+    var t = localStorage.getItem('wce-theme');
+    if (t) document.documentElement.setAttribute('data-theme', t);
+  } catch (e) {}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+
+<header class="site-head detail-head">
+  <div class="wrap">
+    <p class="crumb"><a href="/wbm-collections-explorer/">← All 49 collections</a></p>
+    <div class="head-top">
+      <div>
+        <p class="eyebrow">U.S. Government</p>
+        <h1>End of Term 2024</h1>
+        <p class="lede">The federal web captured at the Biden-to-Trump transition, and the biggest End of Term crawl to date.</p>
+      </div>
+      <button id="theme" class="ghost" type="button" aria-label="Switch colour theme">Theme</button>
+    </div>
+
+    <form class="detail-search" data-collection="EndOfTerm2024WebCrawls">
+      <input type="search" name="q" placeholder="Search 743,298,225 web pages…"
+             aria-label="Search inside End of Term 2024" autocomplete="off" autofocus>
+      <button type="submit">Search in Wayback Machine</button>
+    </form>
+  </div>
+</header>
+
+<main id="main">
+<div class="wrap detail-body">
+
+  <div class="stat-tiles">
+    <div class="stat-tile">
+      <span class="stat-value">743,298,225</span>
+      <span class="stat-label">web pages in the index</span>
+      <span class="stat-sub">743.3 million · 9.13% of all Collection Search content</span>
+    </div>
+    <div class="stat-tile">
+      <span class="stat-value">2026-08-22</span>
+      <span class="stat-label">index last rebuilt</span>
+      <span class="stat-sub fresh fresh-current"><span class="dot" aria-hidden="true"></span>Live · rebuilt 9 days ago</span>
+    </div>
+    <div class="stat-tile">
+      <span class="stat-value">2024–2025</span>
+      <span class="stat-label">years the captures come from</span>
+      <span class="stat-sub">2 years represented</span>
+    </div>
+    <div class="stat-tile">
+      <span class="stat-value">38%</span>
+      <span class="stat-label">of these URLs are dead on the live web</span>
+      <span class="stat-sub">measured across 391,958,600 URLs</span>
+    </div>
+  </div>
+
+  
+  <section class="panel">
+    <h2>Captures by year</h2>
+    <p class="panel-note">When the material in this collection was captured — not when it was published.
+      </p>
+    
+    <div class="bars" id="yearbars">
+      
+      <div class="bar-col" data-year="2024" data-n="141,439,188" data-unit="web pages" tabindex="0">
+        <div class="bar-track"><div class="bar-fill" style="height: 23.5%"></div></div>
+        <span class="bar-x">2024</span>
+      </div>
+      
+      <div class="bar-col" data-year="2025" data-n="601,631,998" data-unit="web pages" tabindex="0">
+        <div class="bar-track"><div class="bar-fill" style="height: 100.0%"></div></div>
+        <span class="bar-x">2025</span>
+      </div>
+      
+    </div>
+    <div class="tip" id="tip" hidden></div>
+    <details class="table-fold">
+      <summary>View as a table</summary>
+      <table class="mini">
+        <thead><tr><th scope="col">Year</th><th scope="col" class="num">Web pages</th></tr></thead>
+        <tbody>
+        <tr><th scope="row">2024</th><td class="num">141,439,188</td></tr><tr><th scope="row">2025</th><td class="num">601,631,998</td></tr>
+        </tbody>
+      </table>
+    </details>
+  </section>
+  
+
+  <div class="two-col">
+    
+    <section class="panel">
+      <h2>Top hosts</h2>
+      <p class="panel-note">The aggregation returns the 17 largest hosts; the six biggest are shown.</p>
+      
+      <ul class="ranked">
+        
+        <li>
+          <span class="ranked-label"><a href="https://web.archive.org/web/*/nih.gov*" rel="noopener">nih.gov</a></span>
+          <span class="ranked-bar"><span style="width: 100.0%"></span></span>
+          <span class="ranked-n">84,456,472</span>
+        </li>
+        
+        <li>
+          <span class="ranked-label"><a href="https://web.archive.org/web/*/noaa.gov*" rel="noopener">noaa.gov</a></span>
+          <span class="ranked-bar"><span style="width: 51.0%"></span></span>
+          <span class="ranked-n">43,072,344</span>
+        </li>
+        
+        <li>
+          <span class="ranked-label"><a href="https://web.archive.org/web/*/ed.gov*" rel="noopener">ed.gov</a></span>
+          <span class="ranked-bar"><span style="width: 50.1%"></span></span>
+          <span class="ranked-n">42,344,862</span>
+        </li>
+        
+        <li>
+          <span class="ranked-label"><a href="https://web.archive.org/web/*/usda.gov*" rel="noopener">usda.gov</a></span>
+          <span class="ranked-bar"><span style="width: 45.0%"></span></span>
+          <span class="ranked-n">37,978,382</span>
+        </li>
+        
+        <li>
+          <span class="ranked-label"><a href="https://web.archive.org/web/*/nasa.gov*" rel="noopener">nasa.gov</a></span>
+          <span class="ranked-bar"><span style="width: 42.9%"></span></span>
+          <span class="ranked-n">36,246,019</span>
+        </li>
+        
+        <li>
+          <span class="ranked-label"><a href="https://web.archive.org/web/*/ecfr.gov*" rel="noopener">ecfr.gov</a></span>
+          <span class="ranked-bar"><span style="width: 41.4%"></span></span>
+          <span class="ranked-n">34,995,479</span>
+        </li>
+        
+      </ul>
+    </section>
+    
+
+    
+    <section class="panel">
+      <h2>Languages</h2>
+      <p class="panel-note">Detected language of the indexed text, 17 most common.</p>
+      
+      <ul class="ranked">
+        
+        <li>
+          <span class="ranked-label">English <span class="cid">en</span></span>
+          <span class="ranked-bar"><span style="width: 100.0%"></span></span>
+          <span class="ranked-n">645,111,700</span>
+        </li>
+        
+        <li>
+          <span class="ranked-label">Spanish <span class="cid">es</span></span>
+          <span class="ranked-bar"><span style="width: 0.8%"></span></span>
+          <span class="ranked-n">5,356,059</span>
+        </li>
+        
+        <li>
+          <span class="ranked-label">Quechua <span class="cid">qu</span></span>
+          <span class="ranked-bar"><span style="width: 0.7%"></span></span>
+          <span class="ranked-n">4,550,766</span>
+        </li>
+        
+        <li>
+          <span class="ranked-label">Sinhala <span class="cid">si</span></span>
+          <span class="ranked-bar"><span style="width: 0.4%"></span></span>
+          <span class="ranked-n">2,714,494</span>
+        </li>
+        
+        <li>
+          <span class="ranked-label">Latin <span class="cid">la</span></span>
+          <span class="ranked-bar"><span style="width: 0.4%"></span></span>
+          <span class="ranked-n">2,627,944</span>
+        </li>
+        
+        <li>
+          <span class="ranked-label">French <span class="cid">fr</span></span>
+          <span class="ranked-bar"><span style="width: 0.4%"></span></span>
+          <span class="ranked-n">2,277,024</span>
+        </li>
+        
+      </ul>
+    </section>
+    
+  </div>
+
+  <section class="panel">
+    <h2>Provenance</h2>
+    <dl class="kv">
+      <div><dt>Collection id</dt><dd><code>EndOfTerm2024WebCrawls</code></dd></div>
+      <div><dt>Title in the Wayback drop-down</dt><dd>End Of Term (US Gov) 2024</dd></div>
+      <div><dt>Index types</dt><dd>text</dd></div>
+      <div><dt>Top-level domains</dt>
+        <dd><code>.gov</code> 679,288,467 · <code>.com</code> 24,876,681 · <code>.mil</code> 19,428,430 · <code>.net</code> 7,095,371 · <code>.org</code> 5,824,671 · <code>.edu</code> 5,379,204</dd></div>
+      
+      
+      <div><dt>archive.org item</dt>
+        <dd><a href="https://archive.org/details/EndOfTerm2024WebCrawls" rel="noopener">End Of Term 2024 Web Crawls</a>
+          <span class="cid">EndOfTerm2024WebCrawls</span></dd></div>
+      <div><dt>Item created by</dt><dd>sawood@archive.org, 2024-09-19</dd></div>
+      
+      
+      <div><dt>How the index is built</dt><dd class="apidesc">Search 743,298,225 web pages using an index built from anchor text, all URL parts (file names, hosts, domains), MIME Types, language, HTTP Status codes and the full text of the web pages.</dd></div>
+    </dl>
+    <p class="tile-links">
+      <a href="https://web.archive.org/collection-search/EndOfTerm2024WebCrawls" rel="noopener">Open in Wayback Machine</a>
+      <a href="https://archive.org/details/EndOfTerm2024WebCrawls" rel="noopener">archive.org item</a>
+      <a href="/wbm-collections-explorer/api/collections.json">Full dataset (JSON)</a>
+    </p>
+  </section>
+
+  <section class="panel siblings">
+    <h2>Other U.S. Government collections</h2>
+    <ul class="sib-list">
+      
+      <li><a href="/wbm-collections-explorer/c/gov/">.gov Web Pages</a>
+        <span class="cid">428,486,225 web pages</span></li>
+      
+      <li><a href="/wbm-collections-explorer/c/EndOfTerm2020WebCrawls/">End of Term 2020</a>
+        <span class="cid">306,449,773 web pages</span></li>
+      
+      <li><a href="/wbm-collections-explorer/c/gov-pdf/">.gov PDF Documents</a>
+        <span class="cid">121,213,465 PDF files</span></li>
+      
+      <li><a href="/wbm-collections-explorer/c/EndOfTerm2016WebCrawls/">End of Term 2016</a>
+        <span class="cid">57,169,185 web pages</span></li>
+      
+      <li><a href="/wbm-collections-explorer/c/EndOfTerm2012WebCrawls/">End of Term 2012</a>
+        <span class="cid">16,373,743 web pages</span></li>
+      
+      <li><a href="/wbm-collections-explorer/c/eric.ed.gov/">ERIC — Education Research</a>
+        <span class="cid">11,377,291 web pages</span></li>
+      
+      <li><a href="/wbm-collections-explorer/c/EndOfTerm2008WebCrawls/">End of Term 2008</a>
+        <span class="cid">7,817,694 web pages</span></li>
+      
+      <li><a href="/wbm-collections-explorer/c/congress.gov/">Congress.gov</a>
+        <span class="cid">2,912,755 web pages</span></li>
+      
+      <li><a href="/wbm-collections-explorer/c/EndOfTerm2024Videos/">End of Term 2024 Video</a>
+        <span class="cid">2,044,054 videos</span></li>
+      
+      <li><a href="/wbm-collections-explorer/c/FOIAonline.gov/">FOIAonline Releases</a>
+        <span class="cid">1,491,835 PDF files</span></li>
+      
+      <li><a href="/wbm-collections-explorer/c/us-state-department/">State Department on Twitter/X</a>
+        <span class="cid">1,483,778 posts</span></li>
+      
+      <li><a href="/wbm-collections-explorer/c/files.eric.ed.gov/">ERIC Full-Text PDFs</a>
+        <span class="cid">509,664 PDF files</span></li>
+      
+      <li><a href="/wbm-collections-explorer/c/cia-world-factbook/">CIA World Factbook</a>
+        <span class="cid">18,004 web pages</span></li>
+      
+    </ul>
+  </section>
+
+</div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p>
+      Data harvested from the public Wayback Machine endpoints
+      <code>/__wb/search/collectioninfo</code> and <code>/__wb/search/waybacksearch</code>,
+      plus <code>archive.org/metadata</code>. Snapshot taken
+      <time datetime="2026-08-31T17:13:01+00:00">2026-08-31 17:13 UTC</time>.
+    </p>
+    <p>
+      Every collection here is searchable at
+      <a href="https://web.archive.org/collection-search/">web.archive.org/collection-search/</a>.
+      Explorer v1.1.0 · <a href="/wbm-collections-explorer/api/collections.json">JSON API</a>
+    </p>
+  </div>
+</footer>
+<script src="/wbm-collections-explorer/static/app.js?v=1.1.0"></script>
+</body>
+</html>

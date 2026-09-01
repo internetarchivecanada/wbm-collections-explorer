@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}Wayback Collection Search Explorer{% endblock %}</title>
+<meta name="description" content="A tile-based explorer for every collection in the Wayback Machine's Collection Search.">
+<link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}?v={{ version }}">
+<script>
+  // set the theme before first paint so there is no flash
+  try {
+    var t = localStorage.getItem('wce-theme');
+    if (t) document.documentElement.setAttribute('data-theme', t);
+  } catch (e) {}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+{% block body %}{% endblock %}
+<footer class="site-foot">
+  <div class="wrap">
+    <p>
+      Data harvested from the public Wayback Machine endpoints
+      <code>/__wb/search/collectioninfo</code> and <code>/__wb/search/waybacksearch</code>,
+      plus <code>archive.org/metadata</code>. Snapshot taken
+      <time datetime="{{ d.generated }}">{{ d.generated[:16].replace('T', ' ') }} UTC</time>.
+    </p>
+    <p>
+      Every collection here is searchable at
+      <a href="https://web.archive.org/collection-search/">web.archive.org/collection-search/</a>.
+      Explorer v{{ version }} · <a href="{{ url_for('api') }}">JSON API</a>
+    </p>
+  </div>
+</footer>
+<script src="{{ url_for('static', filename='app.js') }}?v={{ version }}"></script>
+</body>
+</html>

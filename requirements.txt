@@ -1,0 +1,2 @@
+# The long-running server edition (app/app.py), as deployed on the studio.
+Flask>=2.2

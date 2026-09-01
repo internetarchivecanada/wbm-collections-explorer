@@ -1,0 +1,6 @@
+redir /collections /collections/
+handle_path /collections/* {
+	reverse_proxy 127.0.0.1:8331 {
+		header_up X-Forwarded-Prefix /collections
+	}
+}

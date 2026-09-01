@@ -1,0 +1,2 @@
+# The serverless build needs a template engine and nothing else.
+Jinja2>=3.1

@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}Not found — Wayback Collection Search{% endblock %}
+{% block body %}
+<main id="main"><div class="wrap" style="padding:64px 0">
+  <h1>No such collection</h1>
+  <p class="lede">That collection id isn't in the Wayback Machine's Collection Search drop-down.</p>
+  <p><a href="{{ url_for('index') }}">← See all collections</a></p>
+</div></main>
+{% endblock %}

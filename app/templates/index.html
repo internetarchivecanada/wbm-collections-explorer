@@ -1,0 +1,233 @@
+{% extends "base.html" %}
+{% block body %}
+
+<header class="site-head">
+  <div class="wrap">
+    <div class="head-top">
+      <div>
+        <p class="eyebrow">Internet Archive · Wayback Machine</p>
+        <h1>Collection Search</h1>
+        <p class="lede">
+          Behind the drop-down on <a href="https://web.archive.org/collection-search/">web.archive.org</a>
+          sit {{ d.totals.collections }} separately-built full-text indexes — the End of Term crawls of the
+          federal web, newsrooms that were shut down or seized, GeoCities, every PDF the Wayback Machine
+          has ever seen. This page lays them all out side by side.
+        </p>
+      </div>
+      <button id="theme" class="ghost" type="button" aria-label="Switch colour theme">Theme</button>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-value">{{ d.totals.collections }}</span>
+        <span class="stat-label">collections</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value">{{ d.totals.documents | commas }}</span>
+        <span class="stat-label">indexed documents across all of them</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value">{{ d.category_order | length }}</span>
+        <span class="stat-label">subject areas</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value">{{ d.collections | selectattr('freshness.0', 'equalto', 'current') | list | length }}</span>
+        <span class="stat-label">indexes refreshed in the last 45 days</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<div class="wrap">
+
+  <div class="controls" role="region" aria-label="Filter and sort collections">
+    <div class="cat-row" role="group" aria-label="Filter by subject area">
+      <button class="chip is-on" data-cat="all" type="button">
+        All <span class="chip-n">{{ d.collections | length }}</span>
+      </button>
+      {% for key in d.category_order %}
+      {% set n = d.collections | selectattr('category', 'equalto', key) | list | length %}
+      <button class="chip" data-cat="{{ key }}" type="button" title="{{ d.categories[key].blurb }}">
+        {{ d.categories[key].label }} <span class="chip-n">{{ n }}</span>
+      </button>
+      {% endfor %}
+    </div>
+    <div class="tool-row">
+      <label class="field">
+        <span class="sr-only">Filter collections by name</span>
+        <input id="q" type="search" placeholder="Filter these {{ d.collections | length }} collections…" autocomplete="off">
+      </label>
+      <label class="field">
+        <span class="field-label">Sort</span>
+        <select id="sort">
+          <option value="count">Largest first</option>
+          <option value="fresh">Most recently indexed</option>
+          <option value="stale">Least recently indexed</option>
+          <option value="title">Title A–Z</option>
+          <option value="span">Longest time span</option>
+          <option value="dead">Most dead links</option>
+        </select>
+      </label>
+      <div class="view-row" role="group" aria-label="View">
+        <button class="seg is-on" data-view="tiles" type="button">Tiles</button>
+        <button class="seg" data-view="table" type="button">Table</button>
+      </div>
+    </div>
+    <p class="result-count" id="count" aria-live="polite"></p>
+  </div>
+
+  <!-- ------------------------------- TILES ------------------------------- -->
+  <div class="grid" id="grid">
+    {% for c in d.collections %}
+    <article class="tile" data-id="{{ c.id }}" data-cat="{{ c.category }}"
+             data-count="{{ c.count }}" data-title="{{ c.title }}"
+             data-age="{{ c.index_age_days if c.index_age_days is not none else 99999 }}"
+             data-span="{{ (c.year_max | int) - (c.year_min | int) if c.year_min else -1 }}"
+             data-dead="{{ '%.4f' % c.dead_share if c.dead_share is not none else -1 }}"
+             data-search="{{ (c.title ~ ' ' ~ c.id ~ ' ' ~ c.blurb ~ ' ' ~ c.category_label) | lower }}">
+
+      <div class="tile-head">
+        <span class="cat">{{ c.category_label }}</span>
+        <span class="fresh fresh-{{ c.freshness[0] }}" title="{{ c.freshness[2] }}">
+          <span class="dot" aria-hidden="true"></span>{{ c.freshness[1] }}
+        </span>
+      </div>
+
+      <h2 class="tile-title"><a href="{{ url_for('detail', cid=c.id) }}">{{ c.title }}</a></h2>
+      <p class="tile-blurb">{{ c.blurb }}</p>
+
+      <div class="figure">
+        <span class="figure-value">{{ c.count | commas }}</span>
+        <span class="figure-unit">{{ c.kind }} indexed</span>
+      </div>
+      <div class="rel" title="{{ c.title }} holds {{ '%.2f' % (c.share * 100) }}% of everything in Collection Search">
+        <span class="rel-fill" style="width: {{ '%.3f' % (c.bar * 100) }}%"></span>
+      </div>
+
+      <dl class="meta">
+        <div><dt>Index updated</dt><dd title="{{ c.freshness[2] }}">{{ c.index_updated or '—' }}</dd></div>
+        <div><dt>Captures from</dt>
+          <dd>{% if c.year_min %}{{ c.year_min }}–{{ c.year_max }}{% else %}—{% endif %}</dd></div>
+        <div><dt>Links now dead</dt>
+          <dd>{% if c.dead_share is not none %}{{ '%.0f' % (c.dead_share * 100) }}%{% else %}not measured{% endif %}</dd></div>
+      </dl>
+
+      {% if c.years %}
+      {% set ymax = c.years.values() | max %}
+      <div class="spark" role="img"
+           aria-label="Captures by year, {{ c.year_min }} to {{ c.year_max }}, peaking in {{ c.years | dictsort(by='value') | last | first }}">
+        {% for y, n in c.years | dictsort %}
+        <span class="spark-bar" style="height: {{ [9, (n / ymax * 100) | round(1)] | max }}%"
+              title="{{ y }}: {{ n | commas }} {{ c.kind }}"></span>
+        {% endfor %}
+      </div>
+      <p class="spark-cap">
+        Captures by year{% if c.years_capped %}, 17 busiest years{% endif %} · {{ c.year_min }}–{{ c.year_max }}
+      </p>
+      {% else %}
+      <p class="spark-cap none">Index too large to profile — counts only</p>
+      {% endif %}
+
+      {% if c.top_domains %}
+      <p class="doms"><span>Top hosts</span>
+        {% for dm, n in c.top_domains[:3] %}<code>{{ dm }}</code>{% endfor %}
+        {% if c.domain_count_capped %}<em>+ more</em>{% endif %}
+      </p>
+      {% endif %}
+
+      <form class="tile-search" data-collection="{{ c.id }}">
+        <input type="search" name="q" placeholder="Search {{ c.title }}…"
+               aria-label="Search inside {{ c.title }} on the Wayback Machine" autocomplete="off">
+        <button type="submit">Search</button>
+      </form>
+
+      <p class="tile-links">
+        <a href="{{ url_for('detail', cid=c.id) }}">Details</a>
+        <a href="{{ c.search_url }}" rel="noopener">Open in Wayback Machine</a>
+        {% if c.item_url %}<a href="{{ c.item_url }}" rel="noopener">archive.org item</a>{% endif %}
+      </p>
+    </article>
+    {% endfor %}
+  </div>
+
+  <!-- ------------------------------- TABLE ------------------------------- -->
+  <div class="table-wrap" id="table" hidden>
+    <table>
+      <caption class="sr-only">All {{ d.collections | length }} Collection Search collections</caption>
+      <thead>
+        <tr>
+          <th scope="col">Collection</th><th scope="col">Subject area</th>
+          <th scope="col" class="num">Documents</th><th scope="col">Unit</th>
+          <th scope="col">Index updated</th><th scope="col">Captures</th>
+          <th scope="col" class="num">Dead</th><th scope="col">Search</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for c in d.collections %}
+        <tr data-cat="{{ c.category }}" data-id="{{ c.id }}"
+            data-count="{{ c.count }}" data-title="{{ c.title }}"
+            data-age="{{ c.index_age_days if c.index_age_days is not none else 99999 }}"
+            data-span="{{ (c.year_max | int) - (c.year_min | int) if c.year_min else -1 }}"
+            data-dead="{{ '%.4f' % c.dead_share if c.dead_share is not none else -1 }}"
+            data-search="{{ (c.title ~ ' ' ~ c.id ~ ' ' ~ c.blurb ~ ' ' ~ c.category_label) | lower }}">
+          <th scope="row"><a href="{{ url_for('detail', cid=c.id) }}">{{ c.title }}</a>
+            <span class="cid">{{ c.id }}</span></th>
+          <td>{{ c.category_label }}</td>
+          <td class="num">{{ c.count | commas }}</td>
+          <td>{{ c.kind }}</td>
+          <td>{{ c.index_updated or '—' }}</td>
+          <td>{% if c.year_min %}{{ c.year_min }}–{{ c.year_max }}{% else %}—{% endif %}</td>
+          <td class="num">{% if c.dead_share is not none %}{{ '%.0f' % (c.dead_share * 100) }}%{% else %}—{% endif %}</td>
+          <td><a href="{{ c.search_url }}" rel="noopener">open</a></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <p class="empty" id="empty" hidden>No collection matches that filter.</p>
+
+  <!-- ------------------------------- NOTES ------------------------------- -->
+  <section class="notes">
+    <h2>Notes on the numbers</h2>
+    <div class="note-grid">
+      <div>
+        <h3>What a "document" is</h3>
+        <p>Each collection is its own index, and a hit means different things in each: a captured web
+          page, a PDF, a video, a social post. The unit is named on every tile. Counts are index sizes
+          reported by the Wayback Machine, not counts of distinct URLs.</p>
+      </div>
+      <div>
+        <h3>Two collections have no profile</h3>
+        <p><strong>PDFs — Web-Wide</strong> and <strong>Telegram Public Channels</strong> are large
+          enough that a whole-collection aggregation times out server-side, so they show counts only.
+          Everything else carries a full profile.</p>
+      </div>
+      <div>
+        <h3>Whole-web indexes, for scale</h3>
+        <ul class="plain">
+          {% for k, per in d.totals.global_indexes.items() %}
+            {% for idx, n in per.items() %}
+            <li><span>{{ k.replace('wayback-anchor-search', 'anchor text') .replace('wayback', 'Wayback') }}{% if idx != 'all' %} · {{ idx }}{% endif %}</span>
+              <strong>{{ n | commas }}</strong></li>
+            {% endfor %}
+          {% endfor %}
+        </ul>
+      </div>
+      <div>
+        <h3>Indexes not in the drop-down</h3>
+        <p>Two collections exist in the search back end but are not offered in the public menu:</p>
+        <ul class="plain">
+          {% for u in d.unlisted %}
+          <li><span><code>{{ u.id }}</code>{% if u.note %} — {{ u.note }}{% endif %}</span>
+            <strong>{{ u.count | commas }}</strong></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div>
+</main>
+{% endblock %}

@@ -60,12 +60,23 @@ is the entire difference between the two.
 push to `main`, plus nightly at 06:45 UTC (the same hour the studio deployment
 refreshes) and on demand via *Run workflow*.
 
-The nightly run re-harvests from `web.archive.org` first. That step is
-`continue-on-error` on purpose: the two largest indexes (`pdf`, 1.73bn, and
-`telegram`, 3.79bn) reliably 504 on the aggregation call, and a runner can fail
-to reach web.archive.org entirely. In both cases `refresh.py` leaves the
-committed dataset in place and the build still produces a complete site — a bad
-harvest degrades the data's freshness, never the deploy.
+The nightly run re-harvests from `web.archive.org` first, and that step is
+`continue-on-error` on purpose, because a partial harvest is the normal case:
+
+* The two largest indexes — `pdf` (1.73bn) and `telegram` (3.79bn) — reliably
+  504 on the aggregation call, from anywhere.
+* **web.archive.org refuses a share of the requests from GitHub runner IPs.**
+  The first full run had 12 of 49 refused outright (`Connection refused`) where
+  the same script from a laptop gets 47 of 49. Hence `--sleep 5` here against
+  the studio's `--sleep 2`.
+
+So `refresh.py` carries the previous profile forward from the committed
+`app/data/collections.json` for any collection whose fetch failed, and records
+when that profile was actually measured in `profile_asof`. Counts and index
+dates come from the roster — one request — so they stay fresh regardless. The
+upshot is that a harvest can improve or hold the published data but never
+degrade it, which `test_refresh.py` pins down. A run of 15 minutes to half an
+hour is normal, most of it spent in those timeouts.
 
 **GitHub Pages needs this repository to be public**, because the
 `internetarchivecanada` org is on the free plan and Pages from a private repo

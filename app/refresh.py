@@ -84,6 +84,51 @@ def rel_age(datestr):
     return d, (dt.date.today() - then).days
 
 
+# Everything in a record that comes from the aggregation call, as opposed to the
+# roster (count, index_updated) or curation (title, blurb). These are the fields
+# a refused or timed-out profile fetch would otherwise blank out.
+PROFILE_KEYS = (
+    "years", "year_min", "year_max", "years_capped",
+    "top_domains", "domain_count_capped", "top_languages", "language_count_capped",
+    "tlds", "dead_known", "dead_share", "dead_sampled", "seed_known", "seed_count",
+    "has_profile",
+)
+
+
+def carry_forward(out, prev_path):
+    """Keep the last good profile for any collection whose fetch just failed.
+
+    The aggregation endpoint 504s on the two largest indexes and refuses
+    outright from some IPs (GitHub runners, notably), so a run that harvests
+    fewer profiles than the last one is normal. Without this a bad run would
+    overwrite good data with blanks; with it, a run can only improve or hold.
+
+    Counts and index dates come from the roster, a single request, so they stay
+    fresh either way. `profile_asof` records when a carried-over profile was
+    actually measured.
+    """
+    try:
+        with open(prev_path) as f:
+            prev = json.load(f)
+    except (OSError, ValueError):
+        return 0
+    was = {c["id"]: c for c in prev.get("collections", [])}
+    asof = (prev.get("generated") or "")[:10]
+    kept = 0
+    for c in out:
+        if c["has_profile"]:
+            continue
+        old_c = was.get(c["id"])
+        if not old_c or not old_c.get("has_profile"):
+            continue
+        for k in PROFILE_KEYS:
+            if k in old_c:
+                c[k] = old_c[k]
+        c["profile_asof"] = old_c.get("profile_asof") or asof
+        kept += 1
+    return kept
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--cached", action="store_true", help="reuse cache/, no network")
@@ -212,6 +257,8 @@ def main():
         })
 
     out.sort(key=lambda x: -x["count"])
+    kept = carry_forward(out, os.path.join(DATA, "collections.json"))
+
     payload = {
         "generated": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
         "source": f"{WB}/collection-search/",
@@ -235,7 +282,8 @@ def main():
         json.dump(payload, f, indent=1)
     os.replace(tmp, os.path.join(DATA, "collections.json"))
     print(f"\nwrote data/collections.json — {len(out)} collections, {total:,} documents, "
-          f"{payload['totals']['with_profile']} with profiles")
+          f"{payload['totals']['with_profile']} with profiles"
+          + (f" ({kept} carried over from the previous run)" if kept else ""))
 
 
 if __name__ == "__main__":

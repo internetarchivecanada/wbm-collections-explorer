@@ -1,0 +1,72 @@
+name: Build and deploy the serverless edition
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    # 06:45 UTC, matching the studio deployment's nightly refresh
+    - cron: '45 6 * * *'
+  workflow_dispatch:
+    inputs:
+      refresh:
+        description: Re-harvest from web.archive.org before building
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Never let two deploys race; let a running one finish.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - run: pip install -r requirements-build.txt
+
+      - id: pages
+        uses: actions/configure-pages@v5
+
+      # Best-effort. The two largest indexes (pdf, telegram) reliably 504 on the
+      # aggregation call, and web.archive.org is occasionally unreachable from a
+      # runner — in either case refresh.py leaves the committed dataset in place
+      # and the build below still produces a complete site.
+      - name: Re-harvest from the Wayback Machine
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' && inputs.refresh
+        continue-on-error: true
+        run: python app/refresh.py --sleep 2
+
+      - name: Build the static site
+        run: |
+          python build.py \
+            --base "${{ steps.pages.outputs.base_path }}/" \
+            --site-url "${{ steps.pages.outputs.base_url }}"
+
+      - name: Check the build
+        run: python check_build.py dist
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

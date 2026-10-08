@@ -13,7 +13,7 @@ from markupsafe import Markup
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA_PATH = os.path.join(HERE, "data", "collections.json")
-VERSION = "1.1.0"
+VERSION = "1.1.1"
 
 
 def read_data(path=DATA_PATH):

@@ -57,37 +57,34 @@ is the entire difference between the two.
 ## Deployment
 
 `.github/workflows/deploy.yml` builds and publishes to GitHub Pages on every
-push to `main`, plus nightly at 06:45 UTC (the same hour the studio deployment
-refreshes) and on demand via *Run workflow*.
+push to `main`, nightly at 16:30 UTC, and on demand via *Run workflow*.
 
-The nightly run re-harvests from `web.archive.org` first, and that step is
-`continue-on-error` on purpose, because a partial harvest is the normal case:
+Every run starts by fetching the dataset the studio deployment publishes,
+`https://wayback-labs.sf.archive.org/collections/api/collections.json`, with
+`fetch_snapshot.py`. The studio re-harvests web.archive.org every morning at
+06:45 Pacific from inside the Internet Archive network and is done in about ten
+minutes; the cron runs at least an hour after that, all year.
 
-* The two largest indexes — `pdf` (1.73bn) and `telegram` (3.79bn) — reliably
-  504 on the aggregation call, from anywhere.
-* **web.archive.org refuses a share of the requests from GitHub runner IPs.**
-  The first full run had 12 of 49 refused outright (`Connection refused`) where
-  the same script from a laptop gets 47 of 49. Hence `--sleep 5` here against
-  the studio's `--sleep 2`.
+CI used to run `app/refresh.py` itself. That stopped working: web.archive.org
+refuses or throttles a share of requests from GitHub runner IPs, and from
+2026-10-01 those requests failed slowly enough that the harvest overran the
+45-minute job limit every night and nothing deployed. The studio already has
+the data, so there is no reason to fetch it twice from a worse vantage point.
 
-So `refresh.py` carries the previous profile forward from the committed
-`app/data/collections.json` for any collection whose fetch failed, and records
-when that profile was actually measured in `profile_asof`. Counts and index
-dates come from the roster — one request — so they stay fresh regardless. The
-upshot is that a harvest can improve or hold the published data but never
-degrade it, which `test_refresh.py` pins down. A run of 15 minutes to half an
-hour is normal, most of it spent in those timeouts.
+`fetch_snapshot.py` fails closed. It retries three times, then checks the
+snapshot: every collection record complete and well-typed, at least 45
+collections and 40 profiles, generated within the last 48 hours. If any of that
+fails, it writes nothing and exits 1, the job stops before deploying, and Pages
+keeps serving the last good site. It deliberately does **not** fall back to the
+committed `app/data/collections.json`: that file is older than whatever Pages is
+already serving, so building from it would roll the site back. The same applies
+to pushes, so a template change cannot deploy while the studio is unreachable;
+re-run the workflow once it is back. `test_fetch_snapshot.py` pins all of this
+down.
 
-**GitHub Pages needs this repository to be public**, because the
-`internetarchivecanada` org is on the free plan and Pages from a private repo
-requires a paid one. Until then the workflow builds and checks but cannot
-deploy. To turn it on:
-
-```sh
-gh repo edit internetarchivecanada/wbm-collections-explorer --visibility public
-gh api -X POST repos/internetarchivecanada/wbm-collections-explorer/pages \
-  -f 'build_type=workflow'
-```
+The committed dataset is still what a local `python3 build.py` uses, and the
+fixture for both test files. Refresh it from the studio with
+`python3 fetch_snapshot.py` and commit the result when it gets stale.
 
 Nothing here is GitHub-specific, though. `dist/` is ordinary static files:
 `aws s3 sync dist/ s3://…`, a Caddy `file_server`, Netlify, or an

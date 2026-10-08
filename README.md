@@ -68,12 +68,18 @@ Each tile has its own search box that goes straight to
 
 `refresh.py --cached` rebuilds from `app/cache/` without touching the network.
 
+The studio host runs `refresh.py` nightly. The GitHub Pages build does not harvest at all: it
+takes the studio's published `/api/collections.json` via `fetch_snapshot.py` (see
+[SERVERLESS.md](SERVERLESS.md)).
+
 ## Layout
 
 ```
 build.py               serverless build: templates + data -> dist/ (Jinja2 only, no Flask)
 check_build.py         post-build check: every page present, every local link resolves
-.github/workflows/     nightly refresh + build + deploy to GitHub Pages
+fetch_snapshot.py      CI data source: the studio's /api/collections.json, validated, fails closed
+test_refresh.py        carry_forward guard; test_fetch_snapshot.py guards fetch_snapshot.py
+.github/workflows/     nightly fetch + build + deploy to GitHub Pages
 run.sh                 launchd entry point → app/venv/bin/python app.py on $PORT (8331)
 refresh.sh             nightly data rebuild (06:45), launchd com.wbmstudio.collections-refresh
 caddy                  Caddy snippet: /collections/* → 127.0.0.1:8331

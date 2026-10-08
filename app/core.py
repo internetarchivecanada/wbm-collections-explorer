@@ -74,15 +74,16 @@ WB = "https://web.archive.org"
 
 _A_OPEN = re.compile(r"&lt;a href=&quot;([^&]+)&quot;&gt;")
 _A_CLOSE = "&lt;/a&gt;"
+_BR = re.compile(r"&lt;br\s*/?&gt;", re.IGNORECASE)
 
 
 def api_html(text):
     """Render the Wayback API's own `description`, which arrives as raw HTML.
 
-    Everything is escaped first and only plain <a href="..."> is allowed back in,
-    so a change upstream can never inject markup here. The API writes its links
-    root-relative (`/web/*/example.com`), which only resolves on web.archive.org,
-    so those are rewritten absolute.
+    Everything is escaped first and only plain <a href="..."> and bare <br> are
+    allowed back in, so a change upstream can never inject markup here. The API
+    writes its links root-relative (`/web/*/example.com`), which only resolves
+    on web.archive.org, so those are rewritten absolute.
     """
     if not text:
         return Markup("")
@@ -96,7 +97,7 @@ def api_html(text):
             return m.group(0)
         return f'<a href="{html.escape(href, quote=True)}" rel="noopener">'
 
-    return Markup(_A_OPEN.sub(anchor, esc).replace(_A_CLOSE, "</a>"))
+    return Markup(_BR.sub("<br>", _A_OPEN.sub(anchor, esc).replace(_A_CLOSE, "</a>")))
 
 
 FILTERS = {"commas": commas, "compact": compact, "lang": lang, "api_html": api_html}

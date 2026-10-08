@@ -39,6 +39,7 @@ jobs:
         run: |
           python test_refresh.py
           python test_fetch_snapshot.py
+          python test_core.py
 
       # The studio host harvests web.archive.org nightly from inside the IA
       # network. Re-harvesting from a runner was refused or throttled, and from
